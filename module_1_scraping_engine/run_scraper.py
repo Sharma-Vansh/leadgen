@@ -41,6 +41,16 @@ from module_1_scraping_engine.archetypes.archetype_a_direct_apis.remoteok import
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jobicy import JobicyScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.weworkremotely import WeWorkRemotelyScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.himalayas import HimalayasScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.arbeitnow import ArbeitnowScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.themuse import TheMuseScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.workingnomads import WorkingNomadsScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.hasjob import HasjobScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.nodesk import NoDeskScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.landingjobs import LandingJobsScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.freelancer import FreelancerScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.adzuna import AdzunaScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jooble import JoobleScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.usajobs import USAJobsScraper
 
 # Import Archetype B Universal ATS Adapters
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.greenhouse_adapter import GreenhouseAdapter
@@ -78,6 +88,16 @@ SCRAPER_REGISTRY = {
     "weworkremotely": WeWorkRemotelyScraper,
     "wwr": WeWorkRemotelyScraper,
     "himalayas": HimalayasScraper,
+    "arbeitnow": ArbeitnowScraper,
+    "themuse": TheMuseScraper,
+    "workingnomads": WorkingNomadsScraper,
+    "hasjob": HasjobScraper,
+    "nodesk": NoDeskScraper,
+    "landingjobs": LandingJobsScraper,
+    "freelancer": FreelancerScraper,
+    "adzuna": AdzunaScraper,
+    "jooble": JoobleScraper,
+    "usajobs": USAJobsScraper,
     # Archetype B
     "greenhouse": GreenhouseAdapter,
     "lever": LeverAdapter,
@@ -102,7 +122,23 @@ SCRAPER_REGISTRY = {
 }
 
 ARCHETYPE_MAP = {
-    "a": [RemotiveScraper, RemoteOKScraper, JobicyScraper, WeWorkRemotelyScraper, HimalayasScraper],
+    "a": [
+        RemotiveScraper,
+        RemoteOKScraper,
+        JobicyScraper,
+        WeWorkRemotelyScraper,
+        HimalayasScraper,
+        ArbeitnowScraper,
+        TheMuseScraper,
+        WorkingNomadsScraper,
+        HasjobScraper,
+        NoDeskScraper,
+        LandingJobsScraper,
+        FreelancerScraper,
+        AdzunaScraper,
+        JoobleScraper,
+        USAJobsScraper,
+    ],
     "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
     "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
     "d": [TelegramListener, WhatsAppReceiver, YouTubeMonitor],
