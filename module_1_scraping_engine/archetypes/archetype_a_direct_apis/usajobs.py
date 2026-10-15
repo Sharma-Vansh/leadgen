@@ -22,8 +22,8 @@ class USAJobsScraper(BaseScraper):
             archetype="A",
             http_client=http_client
         )
-        self.api_key = os.getenv("USAJOBS_API_KEY", "")
-        self.user_agent_email = os.getenv("USAJOBS_USER_AGENT", "leadgen-dev@example.com")
+        self.api_key = os.getenv("USAJOBS_API_KEY", "KjAEs1zdMrj6zeu1ZZ8RgZxQn0zeLIBMewPA57LsiOM=")
+        self.user_agent_email = os.getenv("USAJOBS_USER_AGENT", "vanshsharma7000403@gmail.com")
 
     async def scrape(self, limit: Optional[int] = 50, keyword: str = "Software") -> List[StandardJobListing]:
         if not self.api_key:
@@ -34,6 +34,7 @@ class USAJobsScraper(BaseScraper):
             return []
 
         headers = {
+            "Host": "data.usajobs.gov",
             "User-Agent": self.user_agent_email,
             "Authorization-Key": self.api_key
         }
