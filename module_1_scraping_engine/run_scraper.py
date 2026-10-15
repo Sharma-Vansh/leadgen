@@ -42,19 +42,32 @@ from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jobicy import J
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.weworkremotely import WeWorkRemotelyScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.himalayas import HimalayasScraper
 
+# Import Archetype B Universal ATS Adapters
+from module_1_scraping_engine.archetypes.archetype_b_universal_ats.greenhouse_adapter import GreenhouseAdapter
+from module_1_scraping_engine.archetypes.archetype_b_universal_ats.lever_adapter import LeverAdapter
+from module_1_scraping_engine.archetypes.archetype_b_universal_ats.ashby_adapter import AshbyAdapter
+from module_1_scraping_engine.archetypes.archetype_b_universal_ats.workday_adapter import WorkdayAdapter
+
 console = Console()
 
 SCRAPER_REGISTRY = {
+    # Archetype A
     "remotive": RemotiveScraper,
     "remoteok": RemoteOKScraper,
     "jobicy": JobicyScraper,
     "weworkremotely": WeWorkRemotelyScraper,
     "wwr": WeWorkRemotelyScraper,
-    "himalayas": HimalayasScraper
+    "himalayas": HimalayasScraper,
+    # Archetype B
+    "greenhouse": GreenhouseAdapter,
+    "lever": LeverAdapter,
+    "ashby": AshbyAdapter,
+    "workday": WorkdayAdapter
 }
 
 ARCHETYPE_MAP = {
-    "a": [RemotiveScraper, RemoteOKScraper, JobicyScraper, WeWorkRemotelyScraper, HimalayasScraper]
+    "a": [RemotiveScraper, RemoteOKScraper, JobicyScraper, WeWorkRemotelyScraper, HimalayasScraper],
+    "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter]
 }
 
 

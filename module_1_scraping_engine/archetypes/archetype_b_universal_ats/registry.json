@@ -1,0 +1,59 @@
+{
+  "greenhouse": [
+    {"name": "Swiggy", "slug": "swiggy", "country": "India"},
+    {"name": "Zomato", "slug": "zomato", "country": "India"},
+    {"name": "Razorpay", "slug": "razorpay", "country": "India"},
+    {"name": "PhonePe", "slug": "phonepe", "country": "India"},
+    {"name": "Meesho", "slug": "meesho", "country": "India"},
+    {"name": "CRED", "slug": "cred", "country": "India"},
+    {"name": "Flipkart", "slug": "flipkart", "country": "India"},
+    {"name": "Groww", "slug": "groww", "country": "India"},
+    {"name": "Urban Company", "slug": "urbancompany", "country": "India"},
+    {"name": "Zepto", "slug": "zepto", "country": "India"},
+    {"name": "Airbnb", "slug": "airbnb", "country": "Global"},
+    {"name": "Datadog", "slug": "datadog", "country": "Global"},
+    {"name": "Figma", "slug": "figma", "country": "Global"},
+    {"name": "Discord", "slug": "discord", "country": "Global"},
+    {"name": "Coinbase", "slug": "coinbase", "country": "Global"},
+    {"name": "DoorDash", "slug": "doordash", "country": "Global"},
+    {"name": "GitLab", "slug": "gitlab", "country": "Global"},
+    {"name": "Pinterest", "slug": "pinterest", "country": "Global"},
+    {"name": "Robinhood", "slug": "robinhood", "country": "Global"},
+    {"name": "Instacart", "slug": "instacart", "country": "Global"},
+    {"name": "Affirm", "slug": "affirm", "country": "Global"},
+    {"name": "Cloudflare", "slug": "cloudflare", "country": "Global"},
+    {"name": "Reddit", "slug": "reddit", "country": "Global"},
+    {"name": "Twitch", "slug": "twitch", "country": "Global"}
+  ],
+  "lever": [
+    {"name": "Postman", "slug": "postman", "country": "India"},
+    {"name": "Netflix", "slug": "netflix", "country": "Global"},
+    {"name": "Spotify", "slug": "spotify", "country": "Global"},
+    {"name": "Canva", "slug": "canva", "country": "Global"},
+    {"name": "Palantir", "slug": "palantir", "country": "Global"},
+    {"name": "Docker", "slug": "docker", "country": "Global"},
+    {"name": "Atlassian", "slug": "atlassian", "country": "Global"},
+    {"name": "Lyft", "slug": "lyft", "country": "Global"},
+    {"name": "Eventbrite", "slug": "eventbrite", "country": "Global"},
+    {"name": "Yelp", "slug": "yelp", "country": "Global"}
+  ],
+  "ashby": [
+    {"name": "OpenAI", "slug": "openai", "country": "Global"},
+    {"name": "Linear", "slug": "linear", "country": "Global"},
+    {"name": "Vercel", "slug": "vercel", "country": "Global"},
+    {"name": "Ramp", "slug": "ramp", "country": "Global"},
+    {"name": "Retool", "slug": "retool", "country": "Global"},
+    {"name": "Perplexity", "slug": "perplexity", "country": "Global"},
+    {"name": "Cursor (Anysphere)", "slug": "cursor", "country": "Global"},
+    {"name": "Deel", "slug": "deel", "country": "Global"},
+    {"name": "Monzo", "slug": "monzo", "country": "Global"},
+    {"name": "Supabase", "slug": "supabase", "country": "Global"}
+  ],
+  "workday": [
+    {"name": "Adobe", "slug": "adobe", "instance": "adobe", "country": "Global"},
+    {"name": "Salesforce", "slug": "salesforce", "instance": "salesforce", "country": "Global"},
+    {"name": "Nvidia", "slug": "nvidia", "instance": "nvidia", "country": "Global"},
+    {"name": "Walmart Global Tech", "slug": "walmart", "instance": "walmart", "country": "India"},
+    {"name": "Target", "slug": "target", "instance": "target", "country": "India"}
+  ]
+}
