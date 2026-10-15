@@ -59,6 +59,9 @@ from module_1_scraping_engine.archetypes.archetype_a_direct_apis.career_one_stop
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.cutshort import CutshortScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.yc_jobs import YCJobsScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.python_org import PythonOrgScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jobsora import JobsoraScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.placement_india import PlacementIndiaScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.web3_career import Web3CareerScraper
 
 # Import Archetype B Universal ATS Adapters
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.greenhouse_adapter import GreenhouseAdapter
@@ -115,6 +118,9 @@ SCRAPER_REGISTRY = {
     "yc": YCJobsScraper,
     "ycombinator": YCJobsScraper,
     "pythonorg": PythonOrgScraper,
+    "jobsora": JobsoraScraper,
+    "placementindia": PlacementIndiaScraper,
+    "web3career": Web3CareerScraper,
     # Archetype B
     "greenhouse": GreenhouseAdapter,
     "lever": LeverAdapter,
@@ -163,6 +169,9 @@ ARCHETYPE_MAP = {
         CutshortScraper,
         YCJobsScraper,
         PythonOrgScraper,
+        JobsoraScraper,
+        PlacementIndiaScraper,
+        Web3CareerScraper,
     ],
     "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
     "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
