@@ -53,6 +53,11 @@ from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.free_job_alert import FreeJobAlertScraper
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.ssc_direct import SSCDirectMonitor
 
+# Import Archetype D Community & Social Listeners
+from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.telegram_listener import TelegramListener
+from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.whatsapp_receiver import WhatsAppReceiver
+from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.youtube_monitor import YouTubeMonitor
+
 console = Console()
 
 SCRAPER_REGISTRY = {
@@ -71,13 +76,18 @@ SCRAPER_REGISTRY = {
     # Archetype C
     "sarkariresult": SarkariResultScraper,
     "freejobalert": FreeJobAlertScraper,
-    "ssc": SSCDirectMonitor
+    "ssc": SSCDirectMonitor,
+    # Archetype D
+    "telegram": TelegramListener,
+    "whatsapp": WhatsAppReceiver,
+    "youtube": YouTubeMonitor
 }
 
 ARCHETYPE_MAP = {
     "a": [RemotiveScraper, RemoteOKScraper, JobicyScraper, WeWorkRemotelyScraper, HimalayasScraper],
     "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
-    "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor]
+    "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
+    "d": [TelegramListener, WhatsAppReceiver, YouTubeMonitor]
 }
 
 
