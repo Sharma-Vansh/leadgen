@@ -58,6 +58,16 @@ from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.
 from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.whatsapp_receiver import WhatsAppReceiver
 from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.youtube_monitor import YouTubeMonitor
 
+# Import Archetype E External Stealth Engine
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.naukri_scraper import NaukriScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.linkedin_guest import LinkedInGuestScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.indeed_parser import IndeedParser
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.foundit_scraper import FounditScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.apna_adapter import ApnaAdapter
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.glassdoor_scraper import GlassdoorScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.workindia_scraper import WorkIndiaScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.emitter.queue_publisher import QueuePublisher
+
 console = Console()
 
 SCRAPER_REGISTRY = {
@@ -80,14 +90,23 @@ SCRAPER_REGISTRY = {
     # Archetype D
     "telegram": TelegramListener,
     "whatsapp": WhatsAppReceiver,
-    "youtube": YouTubeMonitor
+    "youtube": YouTubeMonitor,
+    # Archetype E
+    "naukri": NaukriScraper,
+    "linkedin": LinkedInGuestScraper,
+    "indeed": IndeedParser,
+    "foundit": FounditScraper,
+    "apna": ApnaAdapter,
+    "glassdoor": GlassdoorScraper,
+    "workindia": WorkIndiaScraper
 }
 
 ARCHETYPE_MAP = {
     "a": [RemotiveScraper, RemoteOKScraper, JobicyScraper, WeWorkRemotelyScraper, HimalayasScraper],
     "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
     "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
-    "d": [TelegramListener, WhatsAppReceiver, YouTubeMonitor]
+    "d": [TelegramListener, WhatsAppReceiver, YouTubeMonitor],
+    "e": [NaukriScraper, LinkedInGuestScraper, IndeedParser, FounditScraper, ApnaAdapter, GlassdoorScraper, WorkIndiaScraper]
 }
 
 

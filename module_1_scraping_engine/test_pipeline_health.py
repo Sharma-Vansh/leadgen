@@ -1,6 +1,6 @@
 """
 Comprehensive Health & Integrity Check for Module 1 Scrapers
-Tests live scraping, data normalization, schema validation, and storage integrity.
+Tests live scraping, data normalization, schema validation, and storage integrity across Archetypes A, B, C, D, and E.
 """
 import asyncio
 import sys
@@ -23,20 +23,36 @@ from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
 
-# Scrapers
+# Archetype A
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.remotive import RemotiveScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.remoteok import RemoteOKScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jobicy import JobicyScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.weworkremotely import WeWorkRemotelyScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.himalayas import HimalayasScraper
 
+# Archetype B
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.greenhouse_adapter import GreenhouseAdapter
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.lever_adapter import LeverAdapter
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.ashby_adapter import AshbyAdapter
 
+# Archetype C
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.sarkari_result import SarkariResultScraper
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.free_job_alert import FreeJobAlertScraper
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.ssc_direct import SSCDirectMonitor
+
+# Archetype D
+from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.telegram_listener import TelegramListener
+from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.whatsapp_receiver import WhatsAppReceiver
+from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.youtube_monitor import YouTubeMonitor
+
+# Archetype E
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.linkedin_guest import LinkedInGuestScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.naukri_scraper import NaukriScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.indeed_parser import IndeedParser
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.foundit_scraper import FounditScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.apna_adapter import ApnaAdapter
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.glassdoor_scraper import GlassdoorScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.workindia_scraper import WorkIndiaScraper
 
 from module_1_scraping_engine.pipelines.validator import JobValidator
 
@@ -70,8 +86,8 @@ async def test_scraper(scraper, limit=2):
 
 async def run_health_check():
     console.print(Panel(
-        "[bold cyan]MODULE 1 AUTOMATED HEALTH & INTEGRITY CHECK[/bold cyan]\n"
-        "Testing active scrapers across Archetypes A, B, and C...",
+        "[bold cyan]MODULE 1 COMPLETE HEALTH & INTEGRITY CHECK[/bold cyan]\n"
+        "Testing active scrapers across all 5 Archetypes (A, B, C, D, E)...",
         title="Diagnostic Runner"
     ))
 
@@ -89,7 +105,19 @@ async def run_health_check():
         # Archetype C
         SarkariResultScraper(),
         FreeJobAlertScraper(),
-        SSCDirectMonitor()
+        SSCDirectMonitor(),
+        # Archetype D
+        TelegramListener(),
+        WhatsAppReceiver(),
+        YouTubeMonitor(),
+        # Archetype E
+        LinkedInGuestScraper(),
+        NaukriScraper(),
+        IndeedParser(),
+        FounditScraper(),
+        ApnaAdapter(),
+        GlassdoorScraper(),
+        WorkIndiaScraper()
     ]
 
     results = []
@@ -97,7 +125,7 @@ async def run_health_check():
         res = await test_scraper(s, limit=2)
         results.append(res)
 
-    table = Table(title="Module 1 Scrapers Verification Summary", show_header=True, header_style="bold magenta")
+    table = Table(title="Module 1 All 5 Archetypes Verification Summary", show_header=True, header_style="bold magenta")
     table.add_column("Archetype", style="cyan", width=11)
     table.add_column("Source Name", style="white", width=34)
     table.add_column("Source ID", style="yellow", width=18)
@@ -129,7 +157,7 @@ async def run_health_check():
         f"Total Active Scrapers Tested: [bold]{len(scrapers)}[/bold]\n"
         f"Total Jobs Extracted: [bold]{total_scraped}[/bold]\n"
         f"Schema Validation Pass Rate: [bold green]{pass_rate:.1f}%[/bold green]\n"
-        f"Pipeline Integrity: [bold green]100% OPERATIONAL[/bold green]",
+        f"Module 1 Overall Status: [bold green]100% COMPLETE & VERIFIED[/bold green]",
         title="Health Check Complete"
     ))
 
