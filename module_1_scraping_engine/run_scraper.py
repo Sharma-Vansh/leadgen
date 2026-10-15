@@ -62,6 +62,11 @@ from module_1_scraping_engine.archetypes.archetype_a_direct_apis.python_org impo
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jobsora import JobsoraScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.placement_india import PlacementIndiaScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.web3_career import Web3CareerScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.builtin import BuiltInScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.remote_rocketship import RemoteRocketshipScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.wearedevelopers import WeAreDevelopersScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.peopleperhour import PeoplePerHourScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.freshersworld import FreshersworldScraper
 
 # Import Archetype B Universal ATS Adapters
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.greenhouse_adapter import GreenhouseAdapter
@@ -121,6 +126,11 @@ SCRAPER_REGISTRY = {
     "jobsora": JobsoraScraper,
     "placementindia": PlacementIndiaScraper,
     "web3career": Web3CareerScraper,
+    "builtin": BuiltInScraper,
+    "remoterocketship": RemoteRocketshipScraper,
+    "wearedevelopers": WeAreDevelopersScraper,
+    "peopleperhour": PeoplePerHourScraper,
+    "freshersworld": FreshersworldScraper,
     # Archetype B
     "greenhouse": GreenhouseAdapter,
     "lever": LeverAdapter,
@@ -172,6 +182,11 @@ ARCHETYPE_MAP = {
         JobsoraScraper,
         PlacementIndiaScraper,
         Web3CareerScraper,
+        BuiltInScraper,
+        RemoteRocketshipScraper,
+        WeAreDevelopersScraper,
+        PeoplePerHourScraper,
+        FreshersworldScraper,
     ],
     "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
     "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
