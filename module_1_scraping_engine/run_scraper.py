@@ -51,6 +51,11 @@ from module_1_scraping_engine.archetypes.archetype_a_direct_apis.freelancer impo
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.adzuna import AdzunaScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jooble import JoobleScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.usajobs import USAJobsScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.unstop import UnstopScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.internshala import InternshalaScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.reed import ReedScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.careerjet import CareerjetScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.career_one_stop import CareerOneStopScraper
 
 # Import Archetype B Universal ATS Adapters
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.greenhouse_adapter import GreenhouseAdapter
@@ -98,6 +103,11 @@ SCRAPER_REGISTRY = {
     "adzuna": AdzunaScraper,
     "jooble": JoobleScraper,
     "usajobs": USAJobsScraper,
+    "unstop": UnstopScraper,
+    "internshala": InternshalaScraper,
+    "reed": ReedScraper,
+    "careerjet": CareerjetScraper,
+    "careeronestop": CareerOneStopScraper,
     # Archetype B
     "greenhouse": GreenhouseAdapter,
     "lever": LeverAdapter,
@@ -138,6 +148,11 @@ ARCHETYPE_MAP = {
         AdzunaScraper,
         JoobleScraper,
         USAJobsScraper,
+        UnstopScraper,
+        InternshalaScraper,
+        ReedScraper,
+        CareerjetScraper,
+        CareerOneStopScraper,
     ],
     "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
     "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
