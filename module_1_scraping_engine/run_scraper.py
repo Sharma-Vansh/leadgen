@@ -56,6 +56,9 @@ from module_1_scraping_engine.archetypes.archetype_a_direct_apis.internshala imp
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.reed import ReedScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.careerjet import CareerjetScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.career_one_stop import CareerOneStopScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.cutshort import CutshortScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.yc_jobs import YCJobsScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.python_org import PythonOrgScraper
 
 # Import Archetype B Universal ATS Adapters
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.greenhouse_adapter import GreenhouseAdapter
@@ -108,6 +111,10 @@ SCRAPER_REGISTRY = {
     "reed": ReedScraper,
     "careerjet": CareerjetScraper,
     "careeronestop": CareerOneStopScraper,
+    "cutshort": CutshortScraper,
+    "yc": YCJobsScraper,
+    "ycombinator": YCJobsScraper,
+    "pythonorg": PythonOrgScraper,
     # Archetype B
     "greenhouse": GreenhouseAdapter,
     "lever": LeverAdapter,
@@ -153,6 +160,9 @@ ARCHETYPE_MAP = {
         ReedScraper,
         CareerjetScraper,
         CareerOneStopScraper,
+        CutshortScraper,
+        YCJobsScraper,
+        PythonOrgScraper,
     ],
     "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
     "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
