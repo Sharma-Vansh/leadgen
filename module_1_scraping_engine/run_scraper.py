@@ -48,6 +48,11 @@ from module_1_scraping_engine.archetypes.archetype_b_universal_ats.lever_adapter
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.ashby_adapter import AshbyAdapter
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.workday_adapter import WorkdayAdapter
 
+# Import Archetype C Government & PSU Engine
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.sarkari_result import SarkariResultScraper
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.free_job_alert import FreeJobAlertScraper
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.ssc_direct import SSCDirectMonitor
+
 console = Console()
 
 SCRAPER_REGISTRY = {
@@ -62,12 +67,17 @@ SCRAPER_REGISTRY = {
     "greenhouse": GreenhouseAdapter,
     "lever": LeverAdapter,
     "ashby": AshbyAdapter,
-    "workday": WorkdayAdapter
+    "workday": WorkdayAdapter,
+    # Archetype C
+    "sarkariresult": SarkariResultScraper,
+    "freejobalert": FreeJobAlertScraper,
+    "ssc": SSCDirectMonitor
 }
 
 ARCHETYPE_MAP = {
     "a": [RemotiveScraper, RemoteOKScraper, JobicyScraper, WeWorkRemotelyScraper, HimalayasScraper],
-    "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter]
+    "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
+    "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor]
 }
 
 
