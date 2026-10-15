@@ -52,6 +52,10 @@ Thumbs.db
 *.swp
 *.swo
 
+# Scraped Output & Cache
+module_1_scraping_engine/data/output/*.json
+module_1_scraping_engine/data/cache/
+
 # Celery & Redis
 celerybeat-schedule
 celerybeat.pid
