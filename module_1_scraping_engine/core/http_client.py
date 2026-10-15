@@ -69,6 +69,35 @@ class ScrapingHttpClient:
         response.raise_for_status()
         return response.json()
 
+    async def post(
+        self,
+        url: str,
+        json: Optional[Dict[str, Any]] = None,
+        data: Optional[Any] = None,
+        headers: Optional[Dict[str, str]] = None
+    ) -> httpx.Response:
+        await self.rate_limiter.acquire(url)
+        client = await self.get_client()
+        req_headers = self._get_headers(headers)
+
+        response = await client.post(url, json=json, data=data, headers=req_headers)
+        if response.status_code == 429:
+            logger.warning(f"Rate limited by {url}, status code: 429")
+            response.raise_for_status()
+        return response
+
+    async def post_json(
+        self,
+        url: str,
+        json: Optional[Dict[str, Any]] = None,
+        data: Optional[Any] = None,
+        headers: Optional[Dict[str, str]] = None
+    ) -> Any:
+        response = await self.post(url, json=json, data=data, headers=headers)
+        response.raise_for_status()
+        return response.json()
+
     async def close(self):
         if self._client and not self._client.is_closed:
             await self._client.aclose()
+

@@ -22,7 +22,7 @@ class JoobleScraper(BaseScraper):
             archetype="A",
             http_client=http_client
         )
-        self.api_key = os.getenv("JOOBLE_API_KEY", "")
+        self.api_key = os.getenv("JOOBLE_API_KEY", "879eacdb-00ec-4ad4-afa6-b7b8017a9e15")
 
     async def scrape(self, limit: Optional[int] = 50, keywords: str = "software engineer", location: str = "India") -> List[StandardJobListing]:
         if not self.api_key:
