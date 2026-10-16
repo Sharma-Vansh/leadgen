@@ -125,6 +125,9 @@ from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.fo
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.apna_adapter import ApnaAdapter
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.glassdoor_scraper import GlassdoorScraper
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.workindia_scraper import WorkIndiaScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.shine_scraper import ShineScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.instahyre_scraper import InstahyreScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.naukri_campus_scraper import NaukriCampusScraper
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.emitter.queue_publisher import QueuePublisher
 
 console = Console()
@@ -220,7 +223,10 @@ SCRAPER_REGISTRY = {
     "foundit": FounditScraper,
     "apna": ApnaAdapter,
     "glassdoor": GlassdoorScraper,
-    "workindia": WorkIndiaScraper
+    "workindia": WorkIndiaScraper,
+    "shine": ShineScraper,
+    "instahyre": InstahyreScraper,
+    "naukricampus": NaukriCampusScraper
 }
 
 ARCHETYPE_MAP = {
@@ -300,7 +306,18 @@ ARCHETYPE_MAP = {
         HerKeyScraper,
         TwitterListener
     ],
-    "e": [NaukriScraper, LinkedInGuestScraper, IndeedParser, FounditScraper, ApnaAdapter, GlassdoorScraper, WorkIndiaScraper]
+    "e": [
+        NaukriScraper,
+        LinkedInGuestScraper,
+        IndeedParser,
+        FounditScraper,
+        ApnaAdapter,
+        GlassdoorScraper,
+        WorkIndiaScraper,
+        ShineScraper,
+        InstahyreScraper,
+        NaukriCampusScraper
+    ]
 }
 
 
