@@ -72,6 +72,15 @@ from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jobspresso impo
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jobs_ac_uk import JobsAcUkScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.oneforma import OneFormaScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.cryptojobslist import CryptoJobsListScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.freejobalert import FreeJobAlertScraper as FreeJobAlertDirectScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.dailyremote import DailyRemoteScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.postjobfree import PostJobFreeScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.hn_whoishiring import HNWhoIsHiringScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.cryptocurrencyjobs import CryptoCurrencyJobsScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.cryptojobs import CryptoJobsScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.wwr_devops import WWRDevOpsScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.wwr_product import WWRProductScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.remoteok_eng import RemoteOKEngineerScraper
 
 # Import Archetype B Universal ATS Adapters
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.greenhouse_adapter import GreenhouseAdapter
@@ -141,6 +150,15 @@ SCRAPER_REGISTRY = {
     "jobsacuk": JobsAcUkScraper,
     "oneforma": OneFormaScraper,
     "cryptojobslist": CryptoJobsListScraper,
+    "freejobalert_direct": FreeJobAlertDirectScraper,
+    "dailyremote": DailyRemoteScraper,
+    "postjobfree": PostJobFreeScraper,
+    "hnwhoishiring": HNWhoIsHiringScraper,
+    "cryptocurrencyjobs": CryptoCurrencyJobsScraper,
+    "cryptojobs": CryptoJobsScraper,
+    "wwrdevops": WWRDevOpsScraper,
+    "wwrproduct": WWRProductScraper,
+    "remoteok_eng": RemoteOKEngineerScraper,
     # Archetype B
     "greenhouse": GreenhouseAdapter,
     "lever": LeverAdapter,
@@ -202,6 +220,15 @@ ARCHETYPE_MAP = {
         JobsAcUkScraper,
         OneFormaScraper,
         CryptoJobsListScraper,
+        FreeJobAlertDirectScraper,
+        DailyRemoteScraper,
+        PostJobFreeScraper,
+        HNWhoIsHiringScraper,
+        CryptoCurrencyJobsScraper,
+        CryptoJobsScraper,
+        WWRDevOpsScraper,
+        WWRProductScraper,
+        RemoteOKEngineerScraper,
     ],
     "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
     "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
