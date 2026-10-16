@@ -126,6 +126,21 @@ from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.ap
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.glassdoor_scraper import GlassdoorScraper
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.workindia_scraper import WorkIndiaScraper
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.shine_scraper import ShineScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.timesjobs_scraper import TimesJobsScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.freshersworld_scraper import FreshersworldScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.quikrjobs_scraper import QuikrJobsScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.google_jobs_scraper import GoogleJobsScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.jobsora_scraper import JobsoraScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.jooble_stealth import JoobleStealthScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.adzuna_stealth import AdzunaStealthScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.careerjet_scraper import CareerjetScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.ncs_stealth import NCSStealthAdapter
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.placement_india_scraper import PlacementIndiaScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.hirect_scraper import HirectScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.herkey_portal_scraper import HerKeyPortalScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.iimjobs_scraper import IIMJobsScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.hirist_scraper import HiristScraper
+from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.cutshort_scraper import CutshortScraper
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.instahyre_scraper import InstahyreScraper
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.naukri_campus_scraper import NaukriCampusScraper
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.emitter.queue_publisher import QueuePublisher
@@ -216,15 +231,30 @@ SCRAPER_REGISTRY = {
     "reddit": RedditListener,
     "herkey": HerKeyScraper,
     "twitter": TwitterListener,
-    # Archetype E
+    # Archetype E (All 25 Stealth Portals: SRC-0001 to SRC-0025)
     "naukri": NaukriScraper,
     "linkedin": LinkedInGuestScraper,
     "indeed": IndeedParser,
     "foundit": FounditScraper,
-    "apna": ApnaAdapter,
-    "glassdoor": GlassdoorScraper,
-    "workindia": WorkIndiaScraper,
     "shine": ShineScraper,
+    "timesjobs": TimesJobsScraper,
+    "freshersworld": FreshersworldScraper,
+    "apna": ApnaAdapter,
+    "workindia": WorkIndiaScraper,
+    "quikrjobs": QuikrJobsScraper,
+    "glassdoor": GlassdoorScraper,
+    "google_jobs": GoogleJobsScraper,
+    "jobsora": JobsoraScraper,
+    "jooble_stealth": JoobleStealthScraper,
+    "adzuna_stealth": AdzunaStealthScraper,
+    "careerjet": CareerjetScraper,
+    "ncs_portal": NCSStealthAdapter,
+    "placement_india": PlacementIndiaScraper,
+    "hirect": HirectScraper,
+    "herkey_portal": HerKeyPortalScraper,
+    "iimjobs": IIMJobsScraper,
+    "hirist": HiristScraper,
+    "cutshort": CutshortScraper,
     "instahyre": InstahyreScraper,
     "naukricampus": NaukriCampusScraper
 }
@@ -311,10 +341,25 @@ ARCHETYPE_MAP = {
         LinkedInGuestScraper,
         IndeedParser,
         FounditScraper,
-        ApnaAdapter,
-        GlassdoorScraper,
-        WorkIndiaScraper,
         ShineScraper,
+        TimesJobsScraper,
+        FreshersworldScraper,
+        ApnaAdapter,
+        WorkIndiaScraper,
+        QuikrJobsScraper,
+        GlassdoorScraper,
+        GoogleJobsScraper,
+        JobsoraScraper,
+        JoobleStealthScraper,
+        AdzunaStealthScraper,
+        CareerjetScraper,
+        NCSStealthAdapter,
+        PlacementIndiaScraper,
+        HirectScraper,
+        HerKeyPortalScraper,
+        IIMJobsScraper,
+        HiristScraper,
+        CutshortScraper,
         InstahyreScraper,
         NaukriCampusScraper
     ]

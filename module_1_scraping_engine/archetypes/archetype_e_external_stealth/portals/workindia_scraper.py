@@ -1,5 +1,5 @@
 """
-Archetype E: WorkIndia Scraper (SRC-0012)
+Archetype E: WorkIndia Scraper (SRC-0009)
 Focuses on entry-level, operational, and junior tech opportunities.
 """
 from typing import List, Optional
@@ -14,7 +14,7 @@ logger = logging.getLogger("WorkIndiaScraper")
 class WorkIndiaScraper(BaseScraper):
     def __init__(self, http_client=None):
         super().__init__(
-            source_id="SRC-0012",
+            source_id="SRC-0009",
             source_name="WorkIndia",
             archetype="E",
             http_client=http_client
