@@ -18,19 +18,22 @@ class EntityExtractor:
         r"(?:stipend|salary|ctc|package|pay)\s*[:\-]?\s*([₹$€£]?\s*\d+(?:[\d,.]*)?\s*(?:k|lpa|pm|per month|monthly|usd)?)",
         re.IGNORECASE
     )
-    ROLE_REGEX = re.compile(
-        r"\b((?:frontend|backend|fullstack|full-stack|software|sde|ai/ml|machine learning|data science|data analyst|devops|cloud|react|python|qa)\s*(?:engineer|developer|intern|trainee|analyst|associate)?)\b",
-        re.IGNORECASE
-    )
-    COMPANY_REGEX = re.compile(
-        r"(?:hiring at|company|organisation|hiring for)\s*[:\-]?\s*([A-Za-z0-9\s&]+?)(?:\n|,|\.|\s-|\sfor|\srole)",
-        re.IGNORECASE
-    )
+    ROLE_PATTERNS = [
+        re.compile(r"(?:hiring for|hiring|role|position|looking for)[:\s]+([A-Za-z0-9/\s\-\+]+?)(?:\(|!|\.|,|\n|tech|skills|stipend|ctc|package|experience)", re.IGNORECASE),
+        re.compile(r"\b((?:frontend|backend|full[\s\-]?stack|software|sde[\s\-]?[iIvV123]*|ai[\s/]?ml|machine learning|data science|data analyst|devops|cloud|qa|product|mobile|android|ios)\s*(?:engineer|developer|intern|trainee|analyst|associate)?)\b", re.IGNORECASE)
+    ]
+    COMPANY_PATTERNS = [
+        re.compile(r"^([A-Za-z0-9]+)\s+(?:is\s+)?(?:hiring|looking\s+for)", re.IGNORECASE),
+        re.compile(r"(?:at|@)\s+([A-Za-z0-9]+)", re.IGNORECASE),
+        re.compile(r"(?:hiring at|company|organisation|hiring for)\s*[:\-]?\s*([A-Za-z0-9]+)", re.IGNORECASE),
+        re.compile(r"(?:Drive|Alert)[:\s]+([A-Za-z0-9]+)\s+(?:is\s+)?hiring", re.IGNORECASE),
+        re.compile(r"([A-Za-z0-9]+)\s+(?:Off-Campus|Campus)\s+Drive", re.IGNORECASE)
+    ]
 
     @classmethod
     def extract_entities(cls, text: str) -> Dict[str, Any]:
         result = {
-            "company": "Startup / Direct Hiring",
+            "company": "Direct Tech Hiring",
             "role": "Software Developer",
             "batch_eligible": [],
             "salary_raw": None,
@@ -56,19 +59,25 @@ class EntityExtractor:
             result["salary_currency"] = curr
 
         # 3. Role extraction
-        role_match = cls.ROLE_REGEX.search(text)
-        if role_match:
-            result["role"] = role_match.group(1).strip().title()
+        for p in cls.ROLE_PATTERNS:
+            m = p.search(text)
+            if m:
+                cand = m.group(1).strip()
+                if 3 < len(cand) < 40 and not any(w in cand.lower() for w in ["off-campus", "drive", "alert", "placement"]):
+                    result["role"] = cand.title()
+                    break
 
         # 4. Company extraction
-        comp_match = cls.COMPANY_REGEX.search(text)
-        if comp_match:
-            cand = comp_match.group(1).strip()
-            if 2 < len(cand) < 30:
-                result["company"] = cand
+        for p in cls.COMPANY_PATTERNS:
+            m = p.search(text)
+            if m:
+                cand = m.group(1).strip()
+                if 2 < len(cand) < 30 and cand.lower() not in ["off-campus", "placement", "alert", "hiring", "drive", "we"]:
+                    result["company"] = cand
+                    break
 
         # 5. Skills extraction
-        known_tech = ["Python", "Java", "C++", "React", "Node.js", "Django", "FastAPI", "SQL", "PostgreSQL", "MongoDB", "AWS", "Docker", "Git"]
+        known_tech = ["Python", "Java", "C++", "React", "TypeScript", "Node.js", "Django", "FastAPI", "SQL", "PostgreSQL", "MongoDB", "AWS", "Docker", "Git", "Go", "Spring Boot", "Machine Learning"]
         for tech in known_tech:
             if re.search(r"\b" + re.escape(tech) + r"\b", text, re.IGNORECASE):
                 result["skills"].append(tech)

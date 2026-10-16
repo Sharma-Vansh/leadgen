@@ -112,6 +112,10 @@ from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitor
 from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.telegram_listener import TelegramListener
 from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.whatsapp_receiver import WhatsAppReceiver
 from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.youtube_monitor import YouTubeMonitor
+from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.discord_listener import DiscordListener
+from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.reddit_listener import RedditListener
+from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.herkey_scraper import HerKeyScraper
+from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.twitter_listener import TwitterListener
 
 # Import Archetype E External Stealth Engine
 from module_1_scraping_engine.archetypes.archetype_e_external_stealth.portals.naukri_scraper import NaukriScraper
@@ -205,6 +209,10 @@ SCRAPER_REGISTRY = {
     "telegram": TelegramListener,
     "whatsapp": WhatsAppReceiver,
     "youtube": YouTubeMonitor,
+    "discord": DiscordListener,
+    "reddit": RedditListener,
+    "herkey": HerKeyScraper,
+    "twitter": TwitterListener,
     # Archetype E
     "naukri": NaukriScraper,
     "linkedin": LinkedInGuestScraper,
@@ -283,7 +291,15 @@ ARCHETYPE_MAP = {
         BankingRegulatoryMonitor,
         StateEmploymentMonitor
     ],
-    "d": [TelegramListener, WhatsAppReceiver, YouTubeMonitor],
+    "d": [
+        TelegramListener,
+        WhatsAppReceiver,
+        YouTubeMonitor,
+        DiscordListener,
+        RedditListener,
+        HerKeyScraper,
+        TwitterListener
+    ],
     "e": [NaukriScraper, LinkedInGuestScraper, IndeedParser, FounditScraper, ApnaAdapter, GlassdoorScraper, WorkIndiaScraper]
 }
 
