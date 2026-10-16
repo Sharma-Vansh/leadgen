@@ -15,7 +15,7 @@ from module_1_scraping_engine.pipelines.normalizer import JobNormalizer
 class EntityExtractor:
     BATCH_REGEX = re.compile(r"\b(202[3-7])\s*(?:batch|passout|graduates|passouts)?\b", re.IGNORECASE)
     STIPEND_REGEX = re.compile(
-        r"(?:stipend|salary|ctc|package|pay)\s*[:\-]?\s*([₹$€£]?\s*\d+(?:[\d,.]*)?\s*(?:k|lpa|pm|per month|monthly|usd)?)",
+        r"(?:stipend|salary|ctc|package|pay)\s*[:\-]?\s*([₹$€£]?\s*\d+(?:[\d,.]*)?(?:\s*-\s*[₹$€£]?\s*\d+(?:[\d,.]*)?)?\s*(?:k|lpa|pm|per month|monthly|usd|/mo|/yr|/year)?)",
         re.IGNORECASE
     )
     ROLE_PATTERNS = [
@@ -23,9 +23,9 @@ class EntityExtractor:
         re.compile(r"\b((?:frontend|backend|full[\s\-]?stack|software|sde[\s\-]?[iIvV123]*|ai[\s/]?ml|machine learning|data science|data analyst|devops|cloud|qa|product|mobile|android|ios)\s*(?:engineer|developer|intern|trainee|analyst|associate)?)\b", re.IGNORECASE)
     ]
     COMPANY_PATTERNS = [
-        re.compile(r"^([A-Za-z0-9]+)\s+(?:is\s+)?(?:hiring|looking\s+for)", re.IGNORECASE),
+        re.compile(r"(?:\[hiring\]\s*)?([A-Za-z0-9]+)\s+(?:is\s+)?(?:hiring|looking\s+for)", re.IGNORECASE),
         re.compile(r"(?:at|@)\s+([A-Za-z0-9]+)", re.IGNORECASE),
-        re.compile(r"(?:hiring at|company|organisation|hiring for)\s*[:\-]?\s*([A-Za-z0-9]+)", re.IGNORECASE),
+        re.compile(r"(?:hiring at|company|organisation)\s*[:\-]?\s*([A-Za-z0-9]+)", re.IGNORECASE),
         re.compile(r"(?:Drive|Alert)[:\s]+([A-Za-z0-9]+)\s+(?:is\s+)?hiring", re.IGNORECASE),
         re.compile(r"([A-Za-z0-9]+)\s+(?:Off-Campus|Campus)\s+Drive", re.IGNORECASE)
     ]
