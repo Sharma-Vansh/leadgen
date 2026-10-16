@@ -103,6 +103,10 @@ from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitor
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.psu_direct import PSUDirectMonitor
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.employment_news import EmploymentNewsMonitor
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.ncs_portal import NCSPortalMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.state_psc_monitor import StatePSCMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.state_subordinate_monitor import StateSubordinateMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.banking_regulatory_monitor import BankingRegulatoryMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.state_employment_portal import StateEmploymentMonitor
 
 # Import Archetype D Community & Social Listeners
 from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.telegram_listener import TelegramListener
@@ -191,6 +195,12 @@ SCRAPER_REGISTRY = {
     "psu": PSUDirectMonitor,
     "employmentnews": EmploymentNewsMonitor,
     "ncs": NCSPortalMonitor,
+    "state_psc": StatePSCMonitor,
+    "psc": StatePSCMonitor,
+    "state_sssc": StateSubordinateMonitor,
+    "sssc": StateSubordinateMonitor,
+    "banking_regulatory": BankingRegulatoryMonitor,
+    "state_employment": StateEmploymentMonitor,
     # Archetype D
     "telegram": TelegramListener,
     "whatsapp": WhatsAppReceiver,
@@ -267,7 +277,11 @@ ARCHETYPE_MAP = {
         DefenceRecruitmentMonitor,
         PSUDirectMonitor,
         EmploymentNewsMonitor,
-        NCSPortalMonitor
+        NCSPortalMonitor,
+        StatePSCMonitor,
+        StateSubordinateMonitor,
+        BankingRegulatoryMonitor,
+        StateEmploymentMonitor
     ],
     "d": [TelegramListener, WhatsAppReceiver, YouTubeMonitor],
     "e": [NaukriScraper, LinkedInGuestScraper, IndeedParser, FounditScraper, ApnaAdapter, GlassdoorScraper, WorkIndiaScraper]

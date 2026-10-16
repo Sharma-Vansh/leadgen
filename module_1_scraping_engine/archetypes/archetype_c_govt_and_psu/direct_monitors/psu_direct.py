@@ -138,6 +138,30 @@ class PSUDirectMonitor(BaseScraper):
                 "url": "https://pesb.gov.in/Home/Vacancies",
                 "eligibility": "Senior PSU Executives / Officers with proven leadership experience",
                 "salary": "Schedule 'A' & 'B' Scale (₹1,80,000 - ₹3,40,000)"
+            },
+            {
+                "psu_name": "Steel Authority of India Limited (SAIL)",
+                "source_id": "SRC-PSU-10",
+                "title": "Management Trainee (Technical) & Management Trainee (Administration)",
+                "url": "https://sailcareers.com/",
+                "eligibility": "Degree in Engineering with minimum 65% marks / MBA",
+                "salary": "₹50,000 - ₹1,60,000 (E-1 Grade)"
+            },
+            {
+                "psu_name": "Bharat Petroleum Corporation Limited (BPCL)",
+                "source_id": "SRC-PSU-11",
+                "title": "Management Trainee (Chemical / Mechanical / Electrical / Instrumentation)",
+                "url": "https://www.bharatpetroleum.in/careers.aspx",
+                "eligibility": "B.E. / B.Tech from recognized institution through GATE",
+                "salary": "₹50,000 - ₹1,60,000"
+            },
+            {
+                "psu_name": "Hindustan Petroleum Corporation Limited (HPCL)",
+                "source_id": "SRC-PSU-12",
+                "title": "Officers / Engineers (Mechanical, Civil, Electrical, Chemical)",
+                "url": "https://jobs.hpcl.co.in/",
+                "eligibility": "4-Year regular engineering degree with minimum 60% aggregate",
+                "salary": "₹50,000 - ₹1,60,000 (E2 Scale)"
             }
         ]
 

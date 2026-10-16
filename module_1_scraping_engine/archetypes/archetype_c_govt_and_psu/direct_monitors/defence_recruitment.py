@@ -89,6 +89,22 @@ class DefenceRecruitmentMonitor(BaseScraper):
                 "url": "https://www.assamrifles.gov.in/onlineapp/",
                 "eligibility": "10th / 12th Pass / ITI in relevant trade",
                 "cadre": "Havildar / Rifleman / Tradesman"
+            },
+            {
+                "title": "Indian Coast Guard Navik (General Duty) & Yantrik Intake 01/2026",
+                "wing": "Indian Coast Guard (Ministry of Defence)",
+                "source_id": "SRC-DEF-05",
+                "url": "https://joinindiancoastguard.cdac.in/",
+                "eligibility": "10+2 with Maths & Physics / Diploma in Electrical/Mech/Electronics",
+                "cadre": "Navik (GD) / Yantrik"
+            },
+            {
+                "title": "Border Security Force (BSF) Sub Inspector & Constable Recruitment",
+                "wing": "Border Security Force (MHA)",
+                "source_id": "SRC-DEF-06",
+                "url": "https://rectt.bsf.gov.in/",
+                "eligibility": "10th / 12th / Degree / ITI in respective trade",
+                "cadre": "Sub Inspector / Head Constable / Constable"
             }
         ]
 

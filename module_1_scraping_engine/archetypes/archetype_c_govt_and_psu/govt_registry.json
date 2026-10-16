@@ -1,0 +1,1055 @@
+[
+  {
+    "source_id": "SRC-0236",
+    "name": "Union Public Service Commission (UPSC)",
+    "category": "Central Commission",
+    "state_or_ministry": "Ministry of Personnel, Public Grievances and Pensions",
+    "official_portal": "https://upsc.gov.in/",
+    "career_url": "https://upsconline.nic.in/",
+    "verified_domain": "upsc.gov.in"
+  },
+  {
+    "source_id": "SRC-0237",
+    "name": "Staff Selection Commission (SSC)",
+    "category": "Central Commission",
+    "state_or_ministry": "Department of Personnel and Training (DoPT)",
+    "official_portal": "https://ssc.gov.in/",
+    "career_url": "https://ssc.gov.in/candidate-portal",
+    "verified_domain": "ssc.gov.in"
+  },
+  {
+    "source_id": "SRC-0250",
+    "name": "Public Enterprises Selection Board (PESB)",
+    "category": "Central Commission",
+    "state_or_ministry": "Ministry of Personnel",
+    "official_portal": "https://pesb.gov.in/",
+    "career_url": "https://pesb.gov.in/Home/Vacancies",
+    "verified_domain": "pesb.gov.in"
+  },
+  {
+    "source_id": "SRC-0017",
+    "name": "National Career Service (NCS)",
+    "category": "Central Commission",
+    "state_or_ministry": "Ministry of Labour and Employment",
+    "official_portal": "https://www.ncs.gov.in/",
+    "career_url": "https://www.ncs.gov.in/pages/govt-job-vacancies.aspx",
+    "verified_domain": "ncs.gov.in"
+  },
+  {
+    "source_id": "SRC-0249",
+    "name": "Employment News / Rozgar Samachar",
+    "category": "Central Commission",
+    "state_or_ministry": "Ministry of Information and Broadcasting",
+    "official_portal": "https://employmentnews.gov.in/",
+    "career_url": "https://employmentnews.gov.in/NewEmp/Home.aspx",
+    "verified_domain": "employmentnews.gov.in"
+  },
+  {
+    "source_id": "SRC-0302",
+    "name": "NITI Aayog",
+    "category": "Central Commission",
+    "state_or_ministry": "Cabinet Secretariat",
+    "official_portal": "https://www.niti.gov.in/",
+    "career_url": "https://www.niti.gov.in/career/work-with-niti",
+    "verified_domain": "niti.gov.in"
+  },
+  {
+    "source_id": "SRC-0288",
+    "name": "Uttar Pradesh Public Service Commission (UPPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Uttar Pradesh",
+    "official_portal": "https://uppsc.up.nic.in/",
+    "career_url": "https://uppsc.up.nic.in/AllNotifications.aspx",
+    "verified_domain": "uppsc.up.nic.in"
+  },
+  {
+    "source_id": "SRC-0275",
+    "name": "Bihar Public Service Commission (BPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Bihar",
+    "official_portal": "https://bpsc.bihar.gov.in/",
+    "career_url": "https://onlinebpsc.bihar.gov.in/",
+    "verified_domain": "bpsc.bihar.gov.in"
+  },
+  {
+    "source_id": "SRC-0253",
+    "name": "Madhya Pradesh Public Service Commission (MPPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Madhya Pradesh",
+    "official_portal": "https://mppsc.mp.gov.in/",
+    "career_url": "https://mppsc.mp.gov.in/advertisement",
+    "verified_domain": "mppsc.mp.gov.in"
+  },
+  {
+    "source_id": "SRC-0285",
+    "name": "Rajasthan Public Service Commission (RPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Rajasthan",
+    "official_portal": "https://rpsc.rajasthan.gov.in/",
+    "career_url": "https://rpsc.rajasthan.gov.in/advertisements",
+    "verified_domain": "rpsc.rajasthan.gov.in"
+  },
+  {
+    "source_id": "SRC-0283",
+    "name": "Maharashtra Public Service Commission (MPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Maharashtra",
+    "official_portal": "https://mpsc.gov.in/",
+    "career_url": "https://mpsconline.gov.in/",
+    "verified_domain": "mpsc.gov.in"
+  },
+  {
+    "source_id": "SRC-0286",
+    "name": "Tamil Nadu Public Service Commission (TNPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Tamil Nadu",
+    "official_portal": "https://www.tnpsc.gov.in/",
+    "career_url": "https://www.tnpsc.gov.in/English/Notification.aspx",
+    "verified_domain": "tnpsc.gov.in"
+  },
+  {
+    "source_id": "SRC-0281",
+    "name": "Karnataka Public Service Commission (KPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Karnataka",
+    "official_portal": "https://kpsc.kar.nic.in/",
+    "career_url": "https://kpsc.kar.nic.in/notification.html",
+    "verified_domain": "kpsc.kar.nic.in"
+  },
+  {
+    "source_id": "SRC-0282",
+    "name": "Kerala Public Service Commission (Kerala PSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Kerala",
+    "official_portal": "https://www.keralapsc.gov.in/",
+    "career_url": "https://thulasi.psc.kerala.gov.in/",
+    "verified_domain": "keralapsc.gov.in"
+  },
+  {
+    "source_id": "SRC-0287",
+    "name": "Telangana State Public Service Commission (TSPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Telangana",
+    "official_portal": "https://www.tspsc.gov.in/",
+    "career_url": "https://websiten.tspsc.gov.in/",
+    "verified_domain": "tspsc.gov.in"
+  },
+  {
+    "source_id": "SRC-0274",
+    "name": "Andhra Pradesh Public Service Commission (APPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Andhra Pradesh",
+    "official_portal": "https://psc.ap.gov.in/",
+    "career_url": "https://psc.ap.gov.in/(S(allnotif))/Home.aspx",
+    "verified_domain": "psc.ap.gov.in"
+  },
+  {
+    "source_id": "SRC-0289",
+    "name": "West Bengal Public Service Commission (WBPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "West Bengal",
+    "official_portal": "https://psc.wb.gov.in/",
+    "career_url": "https://psc.wb.gov.in/advertisement.jsp",
+    "verified_domain": "psc.wb.gov.in"
+  },
+  {
+    "source_id": "SRC-0276",
+    "name": "Gujarat Public Service Commission (GPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Gujarat",
+    "official_portal": "https://gpsc.gujarat.gov.in/",
+    "career_url": "https://gpsc-ojas.gujarat.gov.in/",
+    "verified_domain": "gpsc.gujarat.gov.in"
+  },
+  {
+    "source_id": "SRC-0277",
+    "name": "Haryana Public Service Commission (HPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Haryana",
+    "official_portal": "https://hpsc.gov.in/",
+    "career_url": "https://hpsc.gov.in/en-us/Advertisements",
+    "verified_domain": "hpsc.gov.in"
+  },
+  {
+    "source_id": "SRC-0284",
+    "name": "Odisha Public Service Commission (OPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Odisha",
+    "official_portal": "https://www.opsc.gov.in/",
+    "career_url": "https://opsconline.gov.in/",
+    "verified_domain": "opsc.gov.in"
+  },
+  {
+    "source_id": "SRC-0280",
+    "name": "Jharkhand Public Service Commission (JPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Jharkhand",
+    "official_portal": "https://www.jpsc.gov.in/",
+    "career_url": "https://www.jpsc.gov.in/active_exam.php",
+    "verified_domain": "jpsc.gov.in"
+  },
+  {
+    "source_id": "SRC-0278",
+    "name": "Himachal Pradesh Public Service Commission (HPPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Himachal Pradesh",
+    "official_portal": "https://hppsc.hp.gov.in/",
+    "career_url": "https://hppsconline.hp.gov.in/",
+    "verified_domain": "hppsc.hp.gov.in"
+  },
+  {
+    "source_id": "SRC-0279",
+    "name": "Jammu and Kashmir Public Service Commission (JKPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Jammu and Kashmir",
+    "official_portal": "https://jkpsc.nic.in/",
+    "career_url": "https://jkpsc.nic.in/notifications.html",
+    "verified_domain": "jkpsc.nic.in"
+  },
+  {
+    "source_id": "SRC-GOV-018",
+    "name": "Punjab Public Service Commission (PPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Punjab",
+    "official_portal": "https://ppsc.gov.in/",
+    "career_url": "https://ppsc.gov.in/openadv.aspx",
+    "verified_domain": "ppsc.gov.in"
+  },
+  {
+    "source_id": "SRC-GOV-019",
+    "name": "Uttarakhand Public Service Commission (UKPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Uttarakhand",
+    "official_portal": "https://psc.uk.gov.in/",
+    "career_url": "https://psc.uk.gov.in/recruitment",
+    "verified_domain": "psc.uk.gov.in"
+  },
+  {
+    "source_id": "SRC-GOV-020",
+    "name": "Chhattisgarh Public Service Commission (CGPSC)",
+    "category": "State PSC",
+    "state_or_ministry": "Chhattisgarh",
+    "official_portal": "https://psc.cg.gov.in/",
+    "career_url": "https://psc.cg.gov.in/advertisement.htm",
+    "verified_domain": "psc.cg.gov.in"
+  },
+  {
+    "source_id": "SRC-0293",
+    "name": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)",
+    "category": "Subordinate Selection Board",
+    "state_or_ministry": "Uttar Pradesh",
+    "official_portal": "https://upsssc.gov.in/",
+    "career_url": "https://upsssc.gov.in/Default.aspx",
+    "verified_domain": "upsssc.gov.in"
+  },
+  {
+    "source_id": "SRC-0290",
+    "name": "Delhi Subordinate Services Selection Board (DSSSB)",
+    "category": "Subordinate Selection Board",
+    "state_or_ministry": "Delhi (NCT)",
+    "official_portal": "https://dsssb.delhi.gov.in/",
+    "career_url": "https://dsssbonline.nic.in/",
+    "verified_domain": "dsssb.delhi.gov.in"
+  },
+  {
+    "source_id": "SRC-0291",
+    "name": "Haryana Staff Selection Commission (HSSC)",
+    "category": "Subordinate Selection Board",
+    "state_or_ministry": "Haryana",
+    "official_portal": "https://www.hssc.gov.in/",
+    "career_url": "https://www.hssc.gov.in/advertisements",
+    "verified_domain": "hssc.gov.in"
+  },
+  {
+    "source_id": "SRC-0292",
+    "name": "Rajasthan Staff Selection Board (RSSB)",
+    "category": "Subordinate Selection Board",
+    "state_or_ministry": "Rajasthan",
+    "official_portal": "https://rssb.rajasthan.gov.in/",
+    "career_url": "https://rssb.rajasthan.gov.in/advertisements",
+    "verified_domain": "rssb.rajasthan.gov.in"
+  },
+  {
+    "source_id": "SRC-0294",
+    "name": "Bihar Technical Service Commission (BTSC)",
+    "category": "Subordinate Selection Board",
+    "state_or_ministry": "Bihar",
+    "official_portal": "https://btsc.bihar.gov.in/",
+    "career_url": "https://pariksha.nic.in/",
+    "verified_domain": "btsc.bihar.gov.in"
+  },
+  {
+    "source_id": "SRC-0295",
+    "name": "Madhya Pradesh Police Recruitment Board",
+    "category": "Subordinate Selection Board",
+    "state_or_ministry": "Madhya Pradesh",
+    "official_portal": "https://www.mppolice.gov.in/",
+    "career_url": "https://esb.mp.gov.in/",
+    "verified_domain": "mppolice.gov.in"
+  },
+  {
+    "source_id": "SRC-GOV-027",
+    "name": "Bihar Staff Selection Commission (BSSC)",
+    "category": "Subordinate Selection Board",
+    "state_or_ministry": "Bihar",
+    "official_portal": "https://bssc.bihar.gov.in/",
+    "career_url": "https://onlinebssc.com/",
+    "verified_domain": "bssc.bihar.gov.in"
+  },
+  {
+    "source_id": "SRC-GOV-028",
+    "name": "Odisha Sub-ordinate Staff Selection Commission (OSSSC)",
+    "category": "Subordinate Selection Board",
+    "state_or_ministry": "Odisha",
+    "official_portal": "https://www.osssc.gov.in/",
+    "career_url": "https://www.osssc.gov.in/Public/Default.aspx",
+    "verified_domain": "osssc.gov.in"
+  },
+  {
+    "source_id": "SRC-GOV-029",
+    "name": "Jammu & Kashmir Services Selection Board (JKSSB)",
+    "category": "Subordinate Selection Board",
+    "state_or_ministry": "Jammu and Kashmir",
+    "official_portal": "https://jkssb.nic.in/",
+    "career_url": "https://jkssb.nic.in/Pages/Applicant/ActiveAdvertisements.aspx",
+    "verified_domain": "jkssb.nic.in"
+  },
+  {
+    "source_id": "SRC-GOV-030",
+    "name": "Punjab Subordinate Services Selection Board (PSSSB)",
+    "category": "Subordinate Selection Board",
+    "state_or_ministry": "Punjab",
+    "official_portal": "https://sssb.punjab.gov.in/",
+    "career_url": "https://sssb.punjab.gov.in/CurrentAdvt.html",
+    "verified_domain": "sssb.punjab.gov.in"
+  },
+  {
+    "source_id": "SRC-0238",
+    "name": "Railway Recruitment Control Board (RRCB Central)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://indianrailways.gov.in/",
+    "career_url": "https://www.rrbapply.gov.in/",
+    "verified_domain": "indianrailways.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-01",
+    "name": "RRB Ahmedabad (Western Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbahmedabad.gov.in/",
+    "career_url": "https://www.rrbahmedabad.gov.in/",
+    "verified_domain": "rrbahmedabad.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-02",
+    "name": "RRB Ajmer (North Western Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbajmer.gov.in/",
+    "career_url": "https://www.rrbajmer.gov.in/",
+    "verified_domain": "rrbajmer.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-03",
+    "name": "RRB Allahabad / Prayagraj (North Central)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbald.gov.in/",
+    "career_url": "https://www.rrbald.gov.in/",
+    "verified_domain": "rrbald.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-04",
+    "name": "RRB Bangalore (South Western Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbbnc.gov.in/",
+    "career_url": "https://www.rrbbnc.gov.in/",
+    "verified_domain": "rrbbnc.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-05",
+    "name": "RRB Bhopal (West Central Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbbhopal.gov.in/",
+    "career_url": "https://www.rrbbhopal.gov.in/",
+    "verified_domain": "rrbbhopal.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-06",
+    "name": "RRB Bhubaneswar (East Coast Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbbbs.gov.in/",
+    "career_url": "https://www.rrbbbs.gov.in/",
+    "verified_domain": "rrbbbs.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-07",
+    "name": "RRB Bilaspur (South East Central Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbbilaspur.gov.in/",
+    "career_url": "https://www.rrbbilaspur.gov.in/",
+    "verified_domain": "rrbbilaspur.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-08",
+    "name": "RRB Chandigarh (Northern Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbcdg.gov.in/",
+    "career_url": "https://www.rrbcdg.gov.in/",
+    "verified_domain": "rrbcdg.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-09",
+    "name": "RRB Chennai (Southern Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbchennai.gov.in/",
+    "career_url": "https://www.rrbchennai.gov.in/",
+    "verified_domain": "rrbchennai.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-10",
+    "name": "RRB Gorakhpur (North Eastern Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbgkp.gov.in/",
+    "career_url": "https://www.rrbgkp.gov.in/",
+    "verified_domain": "rrbgkp.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-11",
+    "name": "RRB Guwahati (Northeast Frontier Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbguwahati.gov.in/",
+    "career_url": "https://www.rrbguwahati.gov.in/",
+    "verified_domain": "rrbguwahati.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-12",
+    "name": "RRB Jammu-Srinagar (Northern Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbjammu.nic.in/",
+    "career_url": "https://www.rrbjammu.nic.in/",
+    "verified_domain": "rrbjammu.nic.in"
+  },
+  {
+    "source_id": "SRC-RRB-13",
+    "name": "RRB Kolkata (Eastern Railway / Metro)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbkolkata.gov.in/",
+    "career_url": "https://www.rrbkolkata.gov.in/",
+    "verified_domain": "rrbkolkata.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-14",
+    "name": "RRB Malda (Eastern Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbmalda.gov.in/",
+    "career_url": "https://www.rrbmalda.gov.in/",
+    "verified_domain": "rrbmalda.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-15",
+    "name": "RRB Mumbai (Central / Western Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbmumbai.gov.in/",
+    "career_url": "https://www.rrbmumbai.gov.in/",
+    "verified_domain": "rrbmumbai.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-16",
+    "name": "RRB Muzaffarpur (East Central Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbmuzaffarpur.gov.in/",
+    "career_url": "https://www.rrbmuzaffarpur.gov.in/",
+    "verified_domain": "rrbmuzaffarpur.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-17",
+    "name": "RRB Patna (East Central Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbpatna.gov.in/",
+    "career_url": "https://www.rrbpatna.gov.in/",
+    "verified_domain": "rrbpatna.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-18",
+    "name": "RRB Ranchi (South Eastern Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbranchi.gov.in/",
+    "career_url": "https://www.rrbranchi.gov.in/",
+    "verified_domain": "rrbranchi.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-19",
+    "name": "RRB Secunderabad (South Central Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://rrbsecunderabad.gov.in/",
+    "career_url": "https://rrbsecunderabad.gov.in/",
+    "verified_domain": "rrbsecunderabad.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-20",
+    "name": "RRB Siliguri (Northeast Frontier)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbsiliguri.gov.in/",
+    "career_url": "https://www.rrbsiliguri.gov.in/",
+    "verified_domain": "rrbsiliguri.gov.in"
+  },
+  {
+    "source_id": "SRC-RRB-21",
+    "name": "RRB Thiruvananthapuram (Southern Railway)",
+    "category": "Railway Recruitment Board",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.rrbthiruvananthapuram.gov.in/",
+    "career_url": "https://www.rrbthiruvananthapuram.gov.in/",
+    "verified_domain": "rrbthiruvananthapuram.gov.in"
+  },
+  {
+    "source_id": "SRC-0308",
+    "name": "Bharat Heavy Electricals Limited (BHEL)",
+    "category": "Maharatna PSU",
+    "state_or_ministry": "Ministry of Heavy Industries",
+    "official_portal": "https://bhel.in/",
+    "career_url": "https://careers.bhel.in/",
+    "verified_domain": "bhel.in"
+  },
+  {
+    "source_id": "SRC-0307",
+    "name": "Bharat Electronics Limited (BEL)",
+    "category": "Navratna PSU",
+    "state_or_ministry": "Ministry of Defence",
+    "official_portal": "https://bel-india.in/",
+    "career_url": "https://bel-india.in/careers/",
+    "verified_domain": "bel-india.in"
+  },
+  {
+    "source_id": "SRC-0309",
+    "name": "Hindustan Aeronautics Limited (HAL)",
+    "category": "Navratna PSU",
+    "state_or_ministry": "Ministry of Defence",
+    "official_portal": "https://hal-india.co.in/",
+    "career_url": "https://hal-india.co.in/Career_Design.aspx",
+    "verified_domain": "hal-india.co.in"
+  },
+  {
+    "source_id": "SRC-0310",
+    "name": "Oil and Natural Gas Corporation (ONGC)",
+    "category": "Maharatna PSU",
+    "state_or_ministry": "Ministry of Petroleum",
+    "official_portal": "https://ongcindia.com/",
+    "career_url": "https://ongcindia.com/web/eng/career",
+    "verified_domain": "ongcindia.com"
+  },
+  {
+    "source_id": "SRC-0311",
+    "name": "Indian Oil Corporation Limited (IOCL)",
+    "category": "Maharatna PSU",
+    "state_or_ministry": "Ministry of Petroleum",
+    "official_portal": "https://iocl.com/",
+    "career_url": "https://iocl.com/latest-job-opening",
+    "verified_domain": "iocl.com"
+  },
+  {
+    "source_id": "SRC-0312",
+    "name": "NTPC Limited",
+    "category": "Maharatna PSU",
+    "state_or_ministry": "Ministry of Power",
+    "official_portal": "https://ntpc.co.in/",
+    "career_url": "https://careers.ntpc.co.in/",
+    "verified_domain": "ntpc.co.in"
+  },
+  {
+    "source_id": "SRC-0313",
+    "name": "Power Grid Corporation of India (POWERGRID)",
+    "category": "Maharatna PSU",
+    "state_or_ministry": "Ministry of Power",
+    "official_portal": "https://www.powergrid.in/",
+    "career_url": "https://www.powergrid.in/job-opportunities",
+    "verified_domain": "powergrid.in"
+  },
+  {
+    "source_id": "SRC-0314",
+    "name": "GAIL (India) Limited",
+    "category": "Maharatna PSU",
+    "state_or_ministry": "Ministry of Petroleum",
+    "official_portal": "https://gailonline.com/",
+    "career_url": "https://gailonline.com/CRApplyingGail.html",
+    "verified_domain": "gailonline.com"
+  },
+  {
+    "source_id": "SRC-0315",
+    "name": "Coal India Limited (CIL)",
+    "category": "Maharatna PSU",
+    "state_or_ministry": "Ministry of Coal",
+    "official_portal": "https://www.coalindia.in/",
+    "career_url": "https://www.coalindia.in/career-cil/",
+    "verified_domain": "coalindia.in"
+  },
+  {
+    "source_id": "SRC-PSU-10",
+    "name": "Steel Authority of India Limited (SAIL)",
+    "category": "Maharatna PSU",
+    "state_or_ministry": "Ministry of Steel",
+    "official_portal": "https://sail.co.in/",
+    "career_url": "https://sailcareers.com/",
+    "verified_domain": "sail.co.in"
+  },
+  {
+    "source_id": "SRC-PSU-11",
+    "name": "Bharat Petroleum Corporation (BPCL)",
+    "category": "Maharatna PSU",
+    "state_or_ministry": "Ministry of Petroleum",
+    "official_portal": "https://www.bharatpetroleum.in/",
+    "career_url": "https://www.bharatpetroleum.in/careers.aspx",
+    "verified_domain": "bharatpetroleum.in"
+  },
+  {
+    "source_id": "SRC-PSU-12",
+    "name": "Hindustan Petroleum Corporation (HPCL)",
+    "category": "Maharatna PSU",
+    "state_or_ministry": "Ministry of Petroleum",
+    "official_portal": "https://www.hindustanpetroleum.com/",
+    "career_url": "https://jobs.hpcl.co.in/",
+    "verified_domain": "hindustanpetroleum.com"
+  },
+  {
+    "source_id": "SRC-0316",
+    "name": "RITES Limited",
+    "category": "Navratna PSU",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://rites.com/",
+    "career_url": "https://rites.com/career",
+    "verified_domain": "rites.com"
+  },
+  {
+    "source_id": "SRC-0317",
+    "name": "Rail Vikas Nigam Limited (RVNL)",
+    "category": "Navratna PSU",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://rvnl.org/",
+    "career_url": "https://rvnl.org/career",
+    "verified_domain": "rvnl.org"
+  },
+  {
+    "source_id": "SRC-0318",
+    "name": "Dedicated Freight Corridor Corporation (DFCCIL)",
+    "category": "Navratna PSU",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://dfccil.com/",
+    "career_url": "https://dfccil.com/Career",
+    "verified_domain": "dfccil.com"
+  },
+  {
+    "source_id": "SRC-0377",
+    "name": "Indian Railway Catering and Tourism (IRCTC)",
+    "category": "Navratna PSU",
+    "state_or_ministry": "Ministry of Railways",
+    "official_portal": "https://www.irctc.com/",
+    "career_url": "https://www.irctc.com/careers.html",
+    "verified_domain": "irctc.com"
+  },
+  {
+    "source_id": "SRC-0306",
+    "name": "Centre for Development of Advanced Computing (C-DAC)",
+    "category": "R&D / PSU",
+    "state_or_ministry": "Ministry of Electronics & IT",
+    "official_portal": "https://www.cdac.in/",
+    "career_url": "https://www.cdac.in/index.aspx?id=job_all",
+    "verified_domain": "cdac.in"
+  },
+  {
+    "source_id": "SRC-0320",
+    "name": "Food Safety and Standards Authority (FSSAI)",
+    "category": "Statutory Regulatory Body",
+    "state_or_ministry": "Ministry of Health",
+    "official_portal": "https://www.fssai.gov.in/",
+    "career_url": "https://www.fssai.gov.in/jobs.php",
+    "verified_domain": "fssai.gov.in"
+  },
+  {
+    "source_id": "SRC-0321",
+    "name": "Employees' Provident Fund Organisation (EPFO)",
+    "category": "Statutory Regulatory Body",
+    "state_or_ministry": "Ministry of Labour",
+    "official_portal": "https://www.epfindia.gov.in/",
+    "career_url": "https://www.epfindia.gov.in/site_en/Recruitments.php",
+    "verified_domain": "epfindia.gov.in"
+  },
+  {
+    "source_id": "SRC-0322",
+    "name": "Employees' State Insurance Corporation (ESIC)",
+    "category": "Statutory Regulatory Body",
+    "state_or_ministry": "Ministry of Labour",
+    "official_portal": "https://www.esic.gov.in/",
+    "career_url": "https://www.esic.gov.in/recruitments",
+    "verified_domain": "esic.gov.in"
+  },
+  {
+    "source_id": "SRC-0239",
+    "name": "Institute of Banking Personnel Selection (IBPS)",
+    "category": "Banking & Finance",
+    "state_or_ministry": "Public Sector Banks Recruitment",
+    "official_portal": "https://www.ibps.in/",
+    "career_url": "https://www.ibps.in/",
+    "verified_domain": "ibps.in"
+  },
+  {
+    "source_id": "SRC-BANK-02",
+    "name": "Reserve Bank of India (RBI)",
+    "category": "Banking & Finance",
+    "state_or_ministry": "Central Bank of India",
+    "official_portal": "https://www.rbi.org.in/",
+    "career_url": "https://opportunities.rbi.org.in/",
+    "verified_domain": "rbi.org.in"
+  },
+  {
+    "source_id": "SRC-BANK-03",
+    "name": "State Bank of India (SBI Careers)",
+    "category": "Banking & Finance",
+    "state_or_ministry": "State Bank of India",
+    "official_portal": "https://sbi.co.in/",
+    "career_url": "https://sbi.co.in/web/careers",
+    "verified_domain": "sbi.co.in"
+  },
+  {
+    "source_id": "SRC-BANK-04",
+    "name": "Securities and Exchange Board of India (SEBI)",
+    "category": "Banking & Finance",
+    "state_or_ministry": "Ministry of Finance",
+    "official_portal": "https://www.sebi.gov.in/",
+    "career_url": "https://www.sebi.gov.in/department/human-resources-department-37/careers.html",
+    "verified_domain": "sebi.gov.in"
+  },
+  {
+    "source_id": "SRC-BANK-05",
+    "name": "National Bank for Agriculture and Rural Development (NABARD)",
+    "category": "Banking & Finance",
+    "state_or_ministry": "Ministry of Finance",
+    "official_portal": "https://www.nabard.org/",
+    "career_url": "https://www.nabard.org/careers-notices.aspx",
+    "verified_domain": "nabard.org"
+  },
+  {
+    "source_id": "SRC-BANK-06",
+    "name": "Small Industries Development Bank of India (SIDBI)",
+    "category": "Banking & Finance",
+    "state_or_ministry": "Ministry of Finance",
+    "official_portal": "https://www.sidbi.in/",
+    "career_url": "https://www.sidbi.in/en/careers",
+    "verified_domain": "sidbi.in"
+  },
+  {
+    "source_id": "SRC-BANK-07",
+    "name": "Life Insurance Corporation of India (LIC)",
+    "category": "Banking & Finance",
+    "state_or_ministry": "Ministry of Finance",
+    "official_portal": "https://licindia.in/",
+    "career_url": "https://licindia.in/careers",
+    "verified_domain": "licindia.in"
+  },
+  {
+    "source_id": "SRC-BANK-08",
+    "name": "National Housing Bank (NHB)",
+    "category": "Banking & Finance",
+    "state_or_ministry": "Ministry of Finance",
+    "official_portal": "https://nhb.org.in/",
+    "career_url": "https://nhb.org.in/opportunities@nhb/current-vacancies/",
+    "verified_domain": "nhb.org.in"
+  },
+  {
+    "source_id": "SRC-0262",
+    "name": "Indian Army",
+    "category": "Defence & Paramilitary",
+    "state_or_ministry": "Ministry of Defence",
+    "official_portal": "https://joinindianarmy.nic.in/",
+    "career_url": "https://joinindianarmy.nic.in/default.aspx",
+    "verified_domain": "joinindianarmy.nic.in"
+  },
+  {
+    "source_id": "SRC-0263",
+    "name": "Indian Navy",
+    "category": "Defence & Paramilitary",
+    "state_or_ministry": "Ministry of Defence",
+    "official_portal": "https://www.joinindiannavy.gov.in/",
+    "career_url": "https://www.joinindiannavy.gov.in/en/account/account/register",
+    "verified_domain": "joinindiannavy.gov.in"
+  },
+  {
+    "source_id": "SRC-0264",
+    "name": "Indian Air Force",
+    "category": "Defence & Paramilitary",
+    "state_or_ministry": "Ministry of Defence",
+    "official_portal": "https://careerindianairforce.cdac.in/",
+    "career_url": "https://agnipathvayu.cdac.in/",
+    "verified_domain": "cdac.in"
+  },
+  {
+    "source_id": "SRC-0244",
+    "name": "Defence Research and Development Organisation (DRDO)",
+    "category": "Defence & Paramilitary",
+    "state_or_ministry": "Ministry of Defence",
+    "official_portal": "https://www.drdo.gov.in/",
+    "career_url": "https://rac.gov.in/",
+    "verified_domain": "drdo.gov.in"
+  },
+  {
+    "source_id": "SRC-DEF-05",
+    "name": "Indian Coast Guard (ICG)",
+    "category": "Defence & Paramilitary",
+    "state_or_ministry": "Ministry of Defence",
+    "official_portal": "https://indiancoastguard.gov.in/",
+    "career_url": "https://joinindiancoastguard.cdac.in/",
+    "verified_domain": "indiancoastguard.gov.in"
+  },
+  {
+    "source_id": "SRC-DEF-06",
+    "name": "Border Security Force (BSF)",
+    "category": "Defence & Paramilitary",
+    "state_or_ministry": "Ministry of Home Affairs",
+    "official_portal": "https://bsf.gov.in/",
+    "career_url": "https://rectt.bsf.gov.in/",
+    "verified_domain": "bsf.gov.in"
+  },
+  {
+    "source_id": "SRC-DEF-07",
+    "name": "Central Reserve Police Force (CRPF)",
+    "category": "Defence & Paramilitary",
+    "state_or_ministry": "Ministry of Home Affairs",
+    "official_portal": "https://crpf.gov.in/",
+    "career_url": "https://rect.crpf.gov.in/",
+    "verified_domain": "crpf.gov.in"
+  },
+  {
+    "source_id": "SRC-DEF-08",
+    "name": "Central Industrial Security Force (CISF)",
+    "category": "Defence & Paramilitary",
+    "state_or_ministry": "Ministry of Home Affairs",
+    "official_portal": "https://www.cisf.gov.in/",
+    "career_url": "https://cisfrectt.cisf.gov.in/",
+    "verified_domain": "cisf.gov.in"
+  },
+  {
+    "source_id": "SRC-DEF-09",
+    "name": "Indo-Tibetan Border Police (ITBP)",
+    "category": "Defence & Paramilitary",
+    "state_or_ministry": "Ministry of Home Affairs",
+    "official_portal": "https://itbpolice.nic.in/",
+    "career_url": "https://recruitment.itbpolice.nic.in/",
+    "verified_domain": "itbpolice.nic.in"
+  },
+  {
+    "source_id": "SRC-0271",
+    "name": "Assam Rifles",
+    "category": "Defence & Paramilitary",
+    "state_or_ministry": "Ministry of Home Affairs",
+    "official_portal": "https://www.assamrifles.gov.in/",
+    "career_url": "https://www.assamrifles.gov.in/onlineapp/",
+    "verified_domain": "assamrifles.gov.in"
+  },
+  {
+    "source_id": "SRC-0256",
+    "name": "MP Rojgar Portal",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Madhya Pradesh",
+    "official_portal": "https://mprojgar.gov.in/home",
+    "career_url": "https://mprojgar.gov.in/home",
+    "verified_domain": "mprojgar.gov.in"
+  },
+  {
+    "source_id": "SRC-0341",
+    "name": "Delhi Employment Exchange",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Delhi",
+    "official_portal": "https://onlineemploymentportal.delhi.gov.in/",
+    "career_url": "https://onlineemploymentportal.delhi.gov.in/",
+    "verified_domain": "delhi.gov.in"
+  },
+  {
+    "source_id": "SRC-0342",
+    "name": "Gujarat Anubandham Portal",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Gujarat",
+    "official_portal": "https://anubandham.gujarat.gov.in/",
+    "career_url": "https://anubandham.gujarat.gov.in/",
+    "verified_domain": "gujarat.gov.in"
+  },
+  {
+    "source_id": "SRC-0343",
+    "name": "Haryana Employment Exchange (HREX)",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Haryana",
+    "official_portal": "https://www.hrex.gov.in/",
+    "career_url": "https://www.hrex.gov.in/",
+    "verified_domain": "hrex.gov.in"
+  },
+  {
+    "source_id": "SRC-0344",
+    "name": "Maharashtra Mahaswayam Rojgar",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Maharashtra",
+    "official_portal": "https://rojgar.mahaswayam.gov.in/",
+    "career_url": "https://rojgar.mahaswayam.gov.in/",
+    "verified_domain": "mahaswayam.gov.in"
+  },
+  {
+    "source_id": "SRC-0345",
+    "name": "Punjab Ghar Ghar Rozgar (PGRKAM)",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Punjab",
+    "official_portal": "https://www.pgrkam.com/",
+    "career_url": "https://www.pgrkam.com/",
+    "verified_domain": "pgrkam.com"
+  },
+  {
+    "source_id": "SRC-0346",
+    "name": "Rajasthan Employment Department",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Rajasthan",
+    "official_portal": "https://rajemployment.rajasthan.gov.in/",
+    "career_url": "https://rajemployment.rajasthan.gov.in/",
+    "verified_domain": "rajasthan.gov.in"
+  },
+  {
+    "source_id": "SRC-0347",
+    "name": "Kerala Employment Directorate",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Kerala",
+    "official_portal": "https://www.employment.kerala.gov.in/",
+    "career_url": "https://www.employment.kerala.gov.in/",
+    "verified_domain": "kerala.gov.in"
+  },
+  {
+    "source_id": "SRC-0348",
+    "name": "Tamil Nadu Employment (Velaivaaippu)",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Tamil Nadu",
+    "official_portal": "https://tnvelaivaaippu.gov.in/",
+    "career_url": "https://tnvelaivaaippu.gov.in/",
+    "verified_domain": "tnvelaivaaippu.gov.in"
+  },
+  {
+    "source_id": "SRC-0349",
+    "name": "UP Sewayojan Portal",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Uttar Pradesh",
+    "official_portal": "https://sewayojan.up.nic.in/",
+    "career_url": "https://sewayojan.up.nic.in/",
+    "verified_domain": "sewayojan.up.nic.in"
+  },
+  {
+    "source_id": "SRC-0350",
+    "name": "West Bengal Employment Bank",
+    "category": "State Employment Portal",
+    "state_or_ministry": "West Bengal",
+    "official_portal": "https://employmentbankwb.gov.in/",
+    "career_url": "https://employmentbankwb.gov.in/",
+    "verified_domain": "employmentbankwb.gov.in"
+  },
+  {
+    "source_id": "SRC-0351",
+    "name": "Chhattisgarh e-Rojgar",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Chhattisgarh",
+    "official_portal": "https://erojgar.cg.gov.in/",
+    "career_url": "https://erojgar.cg.gov.in/",
+    "verified_domain": "erojgar.cg.gov.in"
+  },
+  {
+    "source_id": "SRC-0352",
+    "name": "Odisha Employment Mission",
+    "category": "State Employment Portal",
+    "state_or_ministry": "Odisha",
+    "official_portal": "https://empmission.odisha.gov.in/",
+    "career_url": "https://empmission.odisha.gov.in/",
+    "verified_domain": "odisha.gov.in"
+  },
+  {
+    "source_id": "SRC-0257",
+    "name": "Sarkari Result",
+    "category": "Discovery Hub",
+    "state_or_ministry": "India Aggregator",
+    "official_portal": "https://www.sarkariresult.com/",
+    "career_url": "https://www.sarkariresult.com/latestjob/",
+    "verified_domain": "sarkariresult.com"
+  },
+  {
+    "source_id": "SRC-0258",
+    "name": "FreeJobAlert",
+    "category": "Discovery Hub",
+    "state_or_ministry": "India Aggregator",
+    "official_portal": "https://www.freejobalert.com/",
+    "career_url": "https://www.freejobalert.com/",
+    "verified_domain": "freejobalert.com"
+  },
+  {
+    "source_id": "SRC-0259",
+    "name": "SarkariExam",
+    "category": "Discovery Hub",
+    "state_or_ministry": "India Aggregator",
+    "official_portal": "https://www.sarkariexam.com/",
+    "career_url": "https://www.sarkariexam.com/",
+    "verified_domain": "sarkariexam.com"
+  },
+  {
+    "source_id": "SRC-0335",
+    "name": "GovtJobsAlert",
+    "category": "Discovery Hub",
+    "state_or_ministry": "India Aggregator",
+    "official_portal": "https://www.govtjobsalert.in/",
+    "career_url": "https://www.govtjobsalert.in/",
+    "verified_domain": "govtjobsalert.in"
+  },
+  {
+    "source_id": "SRC-0336",
+    "name": "Sarkari Naukri",
+    "category": "Discovery Hub",
+    "state_or_ministry": "India Aggregator",
+    "official_portal": "https://www.sarkarinaukri.com/",
+    "career_url": "https://www.sarkarinaukri.com/",
+    "verified_domain": "sarkarinaukri.com"
+  },
+  {
+    "source_id": "SRC-0337",
+    "name": "India Sarkari Naukri (IndGovtJobs)",
+    "category": "Discovery Hub",
+    "state_or_ministry": "India Aggregator",
+    "official_portal": "https://www.indgovtjobs.in/",
+    "career_url": "https://www.indgovtjobs.in/",
+    "verified_domain": "indgovtjobs.in"
+  },
+  {
+    "source_id": "SRC-0338",
+    "name": "Rojgar Result",
+    "category": "Discovery Hub",
+    "state_or_ministry": "India Aggregator",
+    "official_portal": "https://www.rojgarresult.com/",
+    "career_url": "https://www.rojgarresult.com/",
+    "verified_domain": "rojgarresult.com"
+  },
+  {
+    "source_id": "SRC-0339",
+    "name": "Sarkari Job Find",
+    "category": "Discovery Hub",
+    "state_or_ministry": "India Aggregator",
+    "official_portal": "https://www.sarkarijobfind.com/",
+    "career_url": "https://www.sarkarijobfind.com/",
+    "verified_domain": "sarkarijobfind.com"
+  }
+]
