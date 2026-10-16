@@ -87,6 +87,7 @@ from module_1_scraping_engine.archetypes.archetype_b_universal_ats.greenhouse_ad
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.lever_adapter import LeverAdapter
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.ashby_adapter import AshbyAdapter
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.workday_adapter import WorkdayAdapter
+from module_1_scraping_engine.archetypes.archetype_b_universal_ats.smartrecruiters_adapter import SmartRecruitersAdapter
 
 # Import Archetype C Government & PSU Engine
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.sarkari_result import SarkariResultScraper
@@ -164,6 +165,7 @@ SCRAPER_REGISTRY = {
     "lever": LeverAdapter,
     "ashby": AshbyAdapter,
     "workday": WorkdayAdapter,
+    "smartrecruiters": SmartRecruitersAdapter,
     # Archetype C
     "sarkariresult": SarkariResultScraper,
     "freejobalert": FreeJobAlertScraper,
@@ -230,7 +232,7 @@ ARCHETYPE_MAP = {
         WWRProductScraper,
         RemoteOKEngineerScraper,
     ],
-    "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
+    "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter, SmartRecruitersAdapter],
     "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
     "d": [TelegramListener, WhatsAppReceiver, YouTubeMonitor],
     "e": [NaukriScraper, LinkedInGuestScraper, IndeedParser, FounditScraper, ApnaAdapter, GlassdoorScraper, WorkIndiaScraper]

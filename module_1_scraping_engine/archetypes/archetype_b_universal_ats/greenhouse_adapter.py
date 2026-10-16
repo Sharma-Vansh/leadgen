@@ -1,15 +1,19 @@
 """
 Archetype B: Universal Greenhouse ATS Adapter
 Docs / Pattern: https://boards-api.greenhouse.io/v1/boards/{company}/jobs?content=true
-Covers top tech companies: Swiggy, Zomato, Razorpay, Meesho, Airbnb, Datadog, etc.
+Covers top tech companies: Airbnb, Datadog, Figma, Stripe, SpaceX, Databricks, Coinbase, etc.
 """
 from typing import List, Optional, Dict, Any
+from pathlib import Path
+import json
 import logging
 from module_1_scraping_engine.core.base_adapter import BaseScraper
 from module_1_scraping_engine.core.schema import StandardJobListing
 from module_1_scraping_engine.pipelines.normalizer import JobNormalizer
 
 logger = logging.getLogger("GreenhouseAdapter")
+
+REGISTRY_PATH = Path(__file__).resolve().parent / "registry.json"
 
 
 class GreenhouseAdapter(BaseScraper):
@@ -87,6 +91,15 @@ class GreenhouseAdapter(BaseScraper):
 
     async def scrape(self, limit: Optional[int] = 10, companies: Optional[List[Dict[str, str]]] = None) -> List[StandardJobListing]:
         """Scrapes multiple registered Greenhouse companies."""
+        if not companies:
+            if REGISTRY_PATH.exists():
+                try:
+                    with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
+                        reg_data = json.load(f)
+                    companies = reg_data.get("greenhouse", [])
+                except Exception as e:
+                    logger.warning(f"Failed to read registry: {e}")
+
         if not companies:
             companies = [
                 {"name": "Airbnb", "slug": "airbnb"},

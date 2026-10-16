@@ -1,15 +1,19 @@
 """
 Archetype B: Universal Ashby ATS Adapter
 Docs / Endpoint: https://api.ashbyhq.com/posting-api/job-board/{company}
-Covers top AI & modern tech companies: OpenAI, Linear, Ramp, Retool, Cursor, Perplexity, Deel, etc.
+Covers top AI & modern tech companies: OpenAI, Linear, Ramp, Perplexity, Cursor, Supabase, Atlys, etc.
 """
 from typing import List, Optional, Dict, Any
+from pathlib import Path
+import json
 import logging
 from module_1_scraping_engine.core.base_adapter import BaseScraper
 from module_1_scraping_engine.core.schema import StandardJobListing
 from module_1_scraping_engine.pipelines.normalizer import JobNormalizer
 
 logger = logging.getLogger("AshbyAdapter")
+
+REGISTRY_PATH = Path(__file__).resolve().parent / "registry.json"
 
 
 class AshbyAdapter(BaseScraper):
@@ -93,10 +97,20 @@ class AshbyAdapter(BaseScraper):
     async def scrape(self, limit: Optional[int] = 10, companies: Optional[List[Dict[str, str]]] = None) -> List[StandardJobListing]:
         """Scrapes multiple registered Ashby companies."""
         if not companies:
+            if REGISTRY_PATH.exists():
+                try:
+                    with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
+                        reg_data = json.load(f)
+                    companies = reg_data.get("ashby", [])
+                except Exception as e:
+                    logger.warning(f"Failed to read registry: {e}")
+
+        if not companies:
             companies = [
                 {"name": "OpenAI", "slug": "openai"},
                 {"name": "Ramp", "slug": "ramp"},
-                {"name": "Deel", "slug": "deel"}
+                {"name": "Perplexity", "slug": "perplexity"},
+                {"name": "Cursor", "slug": "cursor"}
             ]
 
         all_listings: List[StandardJobListing] = []

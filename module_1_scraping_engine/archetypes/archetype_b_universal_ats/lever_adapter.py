@@ -1,15 +1,19 @@
 """
 Archetype B: Universal Lever ATS Adapter
 Docs / Pattern: https://api.lever.co/v0/postings/{company}?mode=json
-Covers top tech companies: Postman, Netflix, Spotify, Canva, Palantir, Docker, etc.
+Covers top tech companies: Palantir, Spotify, Coupa, etc.
 """
 from typing import List, Optional, Dict, Any
+from pathlib import Path
+import json
 import logging
 from module_1_scraping_engine.core.base_adapter import BaseScraper
 from module_1_scraping_engine.core.schema import StandardJobListing
 from module_1_scraping_engine.pipelines.normalizer import JobNormalizer
 
 logger = logging.getLogger("LeverAdapter")
+
+REGISTRY_PATH = Path(__file__).resolve().parent / "registry.json"
 
 
 class LeverAdapter(BaseScraper):
@@ -92,6 +96,15 @@ class LeverAdapter(BaseScraper):
 
     async def scrape(self, limit: Optional[int] = 10, companies: Optional[List[Dict[str, str]]] = None) -> List[StandardJobListing]:
         """Scrapes multiple registered Lever companies."""
+        if not companies:
+            if REGISTRY_PATH.exists():
+                try:
+                    with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
+                        reg_data = json.load(f)
+                    companies = reg_data.get("lever", [])
+                except Exception as e:
+                    logger.warning(f"Failed to read registry: {e}")
+
         if not companies:
             companies = [
                 {"name": "Palantir", "slug": "palantir"},
