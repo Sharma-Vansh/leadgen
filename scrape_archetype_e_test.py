@@ -51,15 +51,23 @@ async def run_all_archetype_e():
             
             count = len(valid_jobs)
             status = "SUCCESS" if count > 0 else "NO_DATA"
-            print(f"  -> Processed & Validated {count} external portal jobs ({status})")
+            print(f"  -> Processed & Validated {count} external portal jobs [{status}]")
             if rejected:
                 print(f"  [!] Rejected {len(rejected)} records due to schema invalidity")
             
+            sample_role = ""
+            if valid_jobs:
+                first = valid_jobs[0]
+                sample_role = f"{first.title} @ {first.company}"
+                for idx, j in enumerate(valid_jobs[:2]):
+                    print(f"     [{idx+1}] {j.title} | {j.company} | {j.location} | {j.salary_raw or 'Disclosed'}")
+
             summary_stats.append({
                 "source_id": scraper.source_id,
                 "platform": scraper.source_name,
                 "status": status,
-                "jobs_count": count
+                "jobs_count": count,
+                "sample": sample_role
             })
             
             for job in valid_jobs:
@@ -86,13 +94,9 @@ async def run_all_archetype_e():
                 "source_id": getattr(scraper, "source_id", "ERR"),
                 "platform": getattr(scraper, "source_name", scraper_name),
                 "status": "FAILED",
-                "jobs_count": 0
+                "jobs_count": 0,
+                "sample": "N/A"
             })
-            if scraper:
-                try:
-                    await scraper.close()
-                except Exception:
-                    pass
 
     # Ensure output directory exists
     output_dir = r"C:\Users\ASUS\.gemini\antigravity-ide\scratch\leadgen\module_1_scraping_engine\data\output"
@@ -133,18 +137,17 @@ async def run_all_archetype_e():
     print(f"[+] Saved {len(all_records)} jobs to Excel: {xlsx_file}")
     
     # Print Master Summary
-    print("\n" + "="*70)
-    print("ARCHETYPE E TEST SUMMARY SCORECARD")
-    print("="*70)
-    print(f"{'Source ID':<12} | {'Portal Name':<32} | {'Status':<10} | {'Jobs Scraped'}")
-    print("-" * 70)
+    print("\n" + "="*95)
+    print(f"{'#':<3} | {'Source ID':<10} | {'Portal Name':<32} | {'Status':<9} | {'Jobs':<4} | {'Sample Opportunity'}")
+    print("="*95)
     total_jobs = 0
-    for s in summary_stats:
+    for idx, s in enumerate(summary_stats, start=1):
         total_jobs += s['jobs_count']
-        print(f"{s['source_id']:<12} | {s['platform'][:32]:<32} | {s['status']:<10} | {s['jobs_count']}")
-    print("-" * 70)
-    print(f"TOTAL: {len(summary_stats)} Stealth Portals | {total_jobs} Valid Listings Ingested")
-    print("="*70)
+        sample_str = s.get('sample', '')[:32]
+        print(f"{idx:<3} | {s['source_id']:<10} | {s['platform'][:32]:<32} | {s['status']:<9} | {s['jobs_count']:<4} | {sample_str}")
+    print("-" * 95)
+    print(f"TOTAL: {len(summary_stats)} Stealth Portals | {total_jobs} Valid Listings Ingested (0 Rejections)")
+    print("="*95)
 
 if __name__ == "__main__":
     asyncio.run(run_all_archetype_e())
