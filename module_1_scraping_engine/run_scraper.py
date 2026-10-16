@@ -67,6 +67,11 @@ from module_1_scraping_engine.archetypes.archetype_a_direct_apis.remote_rocketsh
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.wearedevelopers import WeAreDevelopersScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.peopleperhour import PeoplePerHourScraper
 from module_1_scraping_engine.archetypes.archetype_a_direct_apis.freshersworld import FreshersworldScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.arc import ArcScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jobspresso import JobspressoScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.jobs_ac_uk import JobsAcUkScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.oneforma import OneFormaScraper
+from module_1_scraping_engine.archetypes.archetype_a_direct_apis.cryptojobslist import CryptoJobsListScraper
 
 # Import Archetype B Universal ATS Adapters
 from module_1_scraping_engine.archetypes.archetype_b_universal_ats.greenhouse_adapter import GreenhouseAdapter
@@ -131,6 +136,11 @@ SCRAPER_REGISTRY = {
     "wearedevelopers": WeAreDevelopersScraper,
     "peopleperhour": PeoplePerHourScraper,
     "freshersworld": FreshersworldScraper,
+    "arc": ArcScraper,
+    "jobspresso": JobspressoScraper,
+    "jobsacuk": JobsAcUkScraper,
+    "oneforma": OneFormaScraper,
+    "cryptojobslist": CryptoJobsListScraper,
     # Archetype B
     "greenhouse": GreenhouseAdapter,
     "lever": LeverAdapter,
@@ -187,6 +197,11 @@ ARCHETYPE_MAP = {
         WeAreDevelopersScraper,
         PeoplePerHourScraper,
         FreshersworldScraper,
+        ArcScraper,
+        JobspressoScraper,
+        JobsAcUkScraper,
+        OneFormaScraper,
+        CryptoJobsListScraper,
     ],
     "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter],
     "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
