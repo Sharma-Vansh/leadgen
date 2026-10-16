@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeadGen — ATS Company Registry & Scraper Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-group">
+        <div class="logo-icon">⚡</div>
+        <div>
+          <h1 class="logo-title">LeadGen Admin</h1>
+          <span class="logo-subtitle">Universal ATS Registry & Scraper Engine</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="btnOpenAddModal" class="btn btn-primary">
+          <span class="btn-icon">+</span> Add New Company
+        </button>
+        <button id="btnRunScraper" class="btn btn-secondary">
+          <span class="btn-icon">▶</span> Run Live Test Scraper
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    <!-- Quick Stats Cards -->
+    <section class="stats-grid">
+      <div class="stat-card" data-ats="all">
+        <div class="stat-header">
+          <span class="stat-label">Total Connected</span>
+          <span class="stat-badge all">Active</span>
+        </div>
+        <div class="stat-value" id="statTotal">174</div>
+        <div class="stat-desc">Zero-Code Integrated Companies</div>
+      </div>
+
+      <div class="stat-card" data-ats="greenhouse">
+        <div class="stat-header">
+          <span class="stat-label">Greenhouse</span>
+          <span class="stat-badge gh">85 Co.</span>
+        </div>
+        <div class="stat-value" id="statGh">85</div>
+        <div class="stat-desc">Stripe, SpaceX, Databricks, TCS</div>
+      </div>
+
+      <div class="stat-card" data-ats="ashby">
+        <div class="stat-header">
+          <span class="stat-label">Ashby</span>
+          <span class="stat-badge ash">42 Co.</span>
+        </div>
+        <div class="stat-value" id="statAshby">42</div>
+        <div class="stat-desc">OpenAI, Snowflake, Perplexity, Cursor</div>
+      </div>
+
+      <div class="stat-card" data-ats="smartrecruiters">
+        <div class="stat-header">
+          <span class="stat-label">SmartRecruiters</span>
+          <span class="stat-badge sr">18 Co.</span>
+        </div>
+        <div class="stat-value" id="statSr">18</div>
+        <div class="stat-desc">Bosch, Swiggy, Freshworks, ServiceNow</div>
+      </div>
+
+      <div class="stat-card" data-ats="lever">
+        <div class="stat-header">
+          <span class="stat-label">Lever</span>
+          <span class="stat-badge lev">19 Co.</span>
+        </div>
+        <div class="stat-value" id="statLever">19</div>
+        <div class="stat-desc">Palantir, Paytm, Spotify, Zomato, CRED</div>
+      </div>
+
+      <div class="stat-card" data-ats="workday">
+        <div class="stat-header">
+          <span class="stat-label">Workday</span>
+          <span class="stat-badge wd">10 Co.</span>
+        </div>
+        <div class="stat-value" id="statWd">10</div>
+        <div class="stat-desc">Target, Nvidia, Salesforce, Cisco, Adobe</div>
+      </div>
+    </section>
+
+    <!-- Scraper Runner Drawer / Panel -->
+    <section id="runnerSection" class="runner-panel hidden">
+      <div class="runner-header">
+        <div class="runner-title">
+          <span class="live-dot pulse"></span>
+          <span>Live Scraper Pipeline Execution Output</span>
+        </div>
+        <button id="btnCloseRunner" class="btn-icon-close">&times;</button>
+      </div>
+      <div id="runnerConsole" class="runner-console">
+        <pre id="runnerLogs">Initializing pipeline execution...</pre>
+      </div>
+    </section>
+
+    <!-- Filter and Search Toolbar -->
+    <section class="toolbar">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search by Company Name, Slug, Source ID, or Country (e.g., Swiggy, India, openai)...">
+        <button id="btnClearSearch" class="btn-clear-search">&times;</button>
+      </div>
+
+      <div class="filter-pills" id="filterPills">
+        <button class="pill active" data-filter="all">All <span class="pill-count" id="pillAll">174</span></button>
+        <button class="pill" data-filter="greenhouse">Greenhouse <span class="pill-count" id="pillGh">85</span></button>
+        <button class="pill" data-filter="ashby">Ashby <span class="pill-count" id="pillAshby">42</span></button>
+        <button class="pill" data-filter="smartrecruiters">SmartRecruiters <span class="pill-count" id="pillSr">18</span></button>
+        <button class="pill" data-filter="lever">Lever <span class="pill-count" id="pillLever">19</span></button>
+        <button class="pill" data-filter="workday">Workday <span class="pill-count" id="pillWd">10</span></button>
+      </div>
+    </section>
+
+    <!-- Companies Grid Table -->
+    <section class="companies-section">
+      <div class="table-header-meta">
+        <div class="meta-left">
+          <h2 class="section-title">Attached Company Roster</h2>
+          <span class="showing-count" id="showingCount">Showing 174 of 174 companies</span>
+        </div>
+        <div class="meta-right">
+          <button id="btnRefresh" class="btn btn-outline-sm">↻ Refresh</button>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="data-table" id="companiesTable">
+          <thead>
+            <tr>
+              <th style="width: 25%">Company</th>
+              <th style="width: 15%">ATS Platform</th>
+              <th style="width: 18%">Slug / Board</th>
+              <th style="width: 14%">Source ID</th>
+              <th style="width: 12%">Coverage</th>
+              <th style="width: 16%; text-align: right">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="companiesTbody">
+            <!-- Dynamically populated via app.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Add Company Modal -->
+  <div id="addModal" class="modal-backdrop hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title">Attach New Company</h2>
+          <p class="modal-subtitle">Add directly to ATS scraping registry without writing Python code.</p>
+        </div>
+        <button id="btnCloseAddModal" class="btn-icon-close">&times;</button>
+      </div>
+
+      <form id="addCompanyForm" class="modal-body">
+        <!-- Quick URL Autodetect Input -->
+        <div class="form-group highlight-group">
+          <label for="inputUrl">Option A: Paste Careers / Job Board URL (Fastest!)</label>
+          <div class="input-with-button">
+            <input type="url" id="inputUrl" placeholder="https://jobs.ashbyhq.com/openai or https://boards.greenhouse.io/stripe">
+            <button type="button" id="btnAutoDetect" class="btn btn-sm btn-accent">Auto-Detect</button>
+          </div>
+          <span class="hint-text">Auto-detects whether it is Greenhouse, Ashby, Lever, SmartRecruiters, or Workday.</span>
+        </div>
+
+        <div class="divider"><span>OR ENTER MANUALLY</span></div>
+
+        <!-- Manual Fields Grid -->
+        <div class="form-row">
+          <div class="form-group flex-1">
+            <label for="inputName">Company Name <span class="required">*</span></label>
+            <input type="text" id="inputName" placeholder="e.g. BharatPe, Notion, Canva" required>
+          </div>
+
+          <div class="form-group flex-1">
+            <label for="selectAts">ATS Engine <span class="required">*</span></label>
+            <select id="selectAts" required>
+              <option value="greenhouse">Greenhouse (boards-api.greenhouse.io)</option>
+              <option value="ashby">Ashby (api.ashbyhq.com)</option>
+              <option value="smartrecruiters">SmartRecruiters (api.smartrecruiters.com)</option>
+              <option value="lever">Lever (api.lever.co)</option>
+              <option value="workday">Workday (myworkdayjobs.com/wday/cxs)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group flex-1">
+            <label for="inputSlug">Company Slug / Identifier <span class="required">*</span></label>
+            <input type="text" id="inputSlug" placeholder="e.g. swiggy, openai, stripe" required>
+          </div>
+
+          <div class="form-group flex-1">
+            <label for="inputCountry">Coverage / Country</label>
+            <input type="text" id="inputCountry" placeholder="India or Global" value="Global">
+          </div>
+        </div>
+
+        <!-- Workday Specific Extra Fields (Visible only when Workday is selected) -->
+        <div id="workdayFields" class="form-row hidden">
+          <div class="form-group flex-1">
+            <label for="inputWdBoard">Career Board Path</label>
+            <input type="text" id="inputWdBoard" placeholder="e.g. External or targetcareers" value="external">
+          </div>
+          <div class="form-group flex-1">
+            <label for="inputWdInstance">Workday Subdomain Instance</label>
+            <input type="text" id="inputWdInstance" placeholder="e.g. wd5 or wd12" value="wd5">
+          </div>
+        </div>
+
+        <!-- Live Connection Testing Preview -->
+        <div class="test-preview-box">
+          <div class="test-preview-header">
+            <span class="preview-title">Connection Status Check</span>
+            <button type="button" id="btnTestConnection" class="btn btn-outline-sm">
+              <span class="btn-icon">⚡</span> Test Live API Connection
+            </button>
+          </div>
+          <div id="testResultBox" class="test-result-content">
+            <span class="status-idle">Click "Test Live API Connection" to verify active jobs before saving.</span>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="btnCancelModal" class="btn btn-secondary">Cancel</button>
+          <button type="submit" id="btnSaveCompany" class="btn btn-primary">
+            <span class="btn-icon">💾</span> Save & Attach Company
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -36,13 +36,23 @@ class SarkariResultScraper(BaseScraper):
 
         # Find job list links inside #post or div containing list of a tags
         links = soup.select("#post a, #wrap a, ul li a")
+        # Filter for genuine recruitment vacancy links
+        EXCLUDE_KEYWORDS = [
+            "admit card", "result", "answer key", "syllabus", "home", "contact",
+            "scholarship", "terms", "condition", "privacy", "about us", "disclaimer",
+            "certificate", "admission", "correction", "verification"
+        ]
+        
         job_links = []
         for a in links:
             href = a.get("href", "")
             title = a.get_text(strip=True)
-            if href.startswith("http") and ("apply" in href or "recruitment" in href or "online" in href or len(title) > 10):
-                if not any(x in title.lower() for x in ["admit card", "result", "answer key", "syllabus", "home", "contact"]):
-                    job_links.append((title, href))
+            title_lower = title.lower()
+            if href.startswith("http") and len(title) > 6:
+                if not any(ex in title_lower for ex in EXCLUDE_KEYWORDS):
+                    # Check if it looks like a vacancy/job notification
+                    if any(kw in title_lower for kw in ["recruitment", "online form", "apply", "vacancy", "post", "constable", "officer", "assistant", "clerk", "engineer", "trainee", "inter level", "apprentice", "staff"]):
+                        job_links.append((title, href))
 
         if limit:
             job_links = job_links[:limit]

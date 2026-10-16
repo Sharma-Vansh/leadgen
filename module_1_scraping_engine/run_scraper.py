@@ -92,7 +92,17 @@ from module_1_scraping_engine.archetypes.archetype_b_universal_ats.smartrecruite
 # Import Archetype C Government & PSU Engine
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.sarkari_result import SarkariResultScraper
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.free_job_alert import FreeJobAlertScraper
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.sarkari_exam import SarkariExamScraper
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.ind_govt_jobs import IndGovtJobsScraper
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.discovery_hubs.rojgar_result import RojgarResultScraper
 from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.ssc_direct import SSCDirectMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.upsc_direct import UPSCDirectMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.ibps_direct import IBPSDirectMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.rrb_railways import RRBRailwaysMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.defence_recruitment import DefenceRecruitmentMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.psu_direct import PSUDirectMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.employment_news import EmploymentNewsMonitor
+from module_1_scraping_engine.archetypes.archetype_c_govt_and_psu.direct_monitors.ncs_portal import NCSPortalMonitor
 
 # Import Archetype D Community & Social Listeners
 from module_1_scraping_engine.archetypes.archetype_d_community_social.listeners.telegram_listener import TelegramListener
@@ -169,7 +179,18 @@ SCRAPER_REGISTRY = {
     # Archetype C
     "sarkariresult": SarkariResultScraper,
     "freejobalert": FreeJobAlertScraper,
+    "sarkariexam": SarkariExamScraper,
+    "indgovtjobs": IndGovtJobsScraper,
+    "rojgarresult": RojgarResultScraper,
     "ssc": SSCDirectMonitor,
+    "upsc": UPSCDirectMonitor,
+    "ibps": IBPSDirectMonitor,
+    "rrb": RRBRailwaysMonitor,
+    "railways": RRBRailwaysMonitor,
+    "defence": DefenceRecruitmentMonitor,
+    "psu": PSUDirectMonitor,
+    "employmentnews": EmploymentNewsMonitor,
+    "ncs": NCSPortalMonitor,
     # Archetype D
     "telegram": TelegramListener,
     "whatsapp": WhatsAppReceiver,
@@ -233,7 +254,21 @@ ARCHETYPE_MAP = {
         RemoteOKEngineerScraper,
     ],
     "b": [GreenhouseAdapter, LeverAdapter, AshbyAdapter, WorkdayAdapter, SmartRecruitersAdapter],
-    "c": [SarkariResultScraper, FreeJobAlertScraper, SSCDirectMonitor],
+    "c": [
+        SarkariResultScraper,
+        FreeJobAlertScraper,
+        SarkariExamScraper,
+        IndGovtJobsScraper,
+        RojgarResultScraper,
+        SSCDirectMonitor,
+        UPSCDirectMonitor,
+        IBPSDirectMonitor,
+        RRBRailwaysMonitor,
+        DefenceRecruitmentMonitor,
+        PSUDirectMonitor,
+        EmploymentNewsMonitor,
+        NCSPortalMonitor
+    ],
     "d": [TelegramListener, WhatsAppReceiver, YouTubeMonitor],
     "e": [NaukriScraper, LinkedInGuestScraper, IndeedParser, FounditScraper, ApnaAdapter, GlassdoorScraper, WorkIndiaScraper]
 }

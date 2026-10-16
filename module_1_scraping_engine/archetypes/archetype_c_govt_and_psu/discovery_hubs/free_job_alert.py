@@ -32,7 +32,11 @@ class FreeJobAlertScraper(BaseScraper):
             logger.error(f"[{self.source_id}] Failed to fetch page: {e}")
             return []
 
-        # Find notification table rows
+        EXCLUDE_KEYWORDS = [
+            "admit card", "result", "answer key", "syllabus", "board exam", "admissions",
+            "counseling", "merit list", "cutoff", "cut-off", "marks", "exam date"
+        ]
+
         rows = soup.select("table tr, .latjn tr, ul.latjn li a")
         candidates = []
         for r in rows:
@@ -42,8 +46,10 @@ class FreeJobAlertScraper(BaseScraper):
             if a_tag:
                 href = a_tag.get("href", "")
                 title = a_tag.get_text(strip=True)
+                title_lower = title.lower()
                 if href.startswith("http") and len(title) > 8:
-                    candidates.append((title, href))
+                    if not any(ex in title_lower for ex in EXCLUDE_KEYWORDS):
+                        candidates.append((title, href))
 
         if limit:
             candidates = candidates[:limit]

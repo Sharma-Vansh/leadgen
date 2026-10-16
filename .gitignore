@@ -60,6 +60,5 @@ module_1_scraping_engine/data/cache/
 celerybeat-schedule
 celerybeat.pid
 
-# Typst output / cache
-*.pdf
-!templates/*.typ
+# Scratch directory
+scratch/
