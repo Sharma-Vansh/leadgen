@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeadGen AI Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="popup-header">
+      <div class="brand-row">
+        <div class="brand-logo">⚡</div>
+        <div class="brand-text">
+          <span class="brand-title">LeadGen AI</span>
+          <span class="brand-tag">Career OS</span>
+        </div>
+      </div>
+      <div class="candidate-chip">
+        <span class="chip-avatar">A</span>
+        <span class="chip-name" id="candidate-name">Arjun S.</span>
+      </div>
+    </header>
+
+    <!-- Active Tab Detection Card -->
+    <section class="card detection-card">
+      <div class="detection-status-row">
+        <span class="status-indicator-dot" id="status-dot"></span>
+        <span class="status-headline" id="status-headline">Scanning Active Tab...</span>
+      </div>
+
+      <div class="platform-info-box" id="platform-info-box">
+        <div class="info-row">
+          <span class="info-lbl">Platform:</span>
+          <span class="info-val badge" id="platform-name">Detecting...</span>
+        </div>
+        <div class="info-row" id="job-title-row">
+          <span class="info-lbl">Target:</span>
+          <span class="info-val" id="job-title-text">-</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Autofill Action -->
+    <section class="action-section">
+      <button class="btn-autofill" id="btn-autofill">
+        <span>⚡ Autofill Application (1-Click)</span>
+      </button>
+      <div class="status-result" id="autofill-result" style="display: none;"></div>
+    </section>
+
+    <!-- Quick Utilities -->
+    <section class="quick-tools-grid">
+      <div class="tool-item" id="btn-copy-cover-letter">
+        <span class="tool-icon">📝</span>
+        <span class="tool-name">Copy Cover Letter</span>
+      </div>
+      <div class="tool-item" id="btn-open-dashboard">
+        <span class="tool-icon">🚀</span>
+        <span class="tool-name">Web Dashboard</span>
+      </div>
+    </section>
+
+    <!-- Govt Audit Strip -->
+    <footer class="popup-footer">
+      <div class="footer-check">
+        <span class="check-icon">✓</span>
+        <span>SSC/UPSC Photo (20–50KB) Ready</span>
+      </div>
+      <div class="footer-check">
+        <span class="check-icon">✓</span>
+        <span>Signature (10–20KB) Ready</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../shared/default_profile.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

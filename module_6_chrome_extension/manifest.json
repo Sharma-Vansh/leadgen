@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "LeadGen AI — Autonomous Job & Exam Autofill",
+  "version": "1.0.0",
+  "description": "Autonomous 1-click job application autofill and govt exam portal assistant with ATS matching and zero-hallucination verification.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background/service_worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "shared/default_profile.js",
+        "content/field_mapper.js",
+        "content/form_detector.js",
+        "content/autofill_engine.js"
+      ],
+      "css": [
+        "content/autofill_overlay.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
