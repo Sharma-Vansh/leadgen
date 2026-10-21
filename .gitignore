@@ -1,5 +1,6 @@
 # Local tool wrapper
 powershell.cmd
+**/powershell.cmd
 
 # Python
 __pycache__/
