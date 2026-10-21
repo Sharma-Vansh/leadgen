@@ -67,6 +67,13 @@ app.include_router(auth_router)
 app.include_router(profile_router, prefix=settings.API_PREFIX)
 app.include_router(feed_router, prefix=settings.API_PREFIX)
 
+try:
+    from module_4_resume_and_document_lab.routes import resume_router, document_router
+    app.include_router(resume_router, prefix=settings.API_PREFIX)
+    app.include_router(document_router, prefix=settings.API_PREFIX)
+except ImportError as e:
+    logger.warning(f"[API] Module 4 routes not loaded: {e}")
+
 
 @app.get("/", tags=["System"])
 async def root():
